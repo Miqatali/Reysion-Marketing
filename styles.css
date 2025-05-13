@@ -527,7 +527,7 @@ body{
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   margin-left: 25%;
-  margin-right: 50%;
+  margin-right: 30%;
   font-size: 20px;
   font-family: "Varela Round", sans-serif;
   word-spacing: 2px;
@@ -620,6 +620,7 @@ body{
   border-radius: 50%;
   animation: spin 1s linear infinite;
   display: inline-block;
+  /* margin-left: 10px; */
   vertical-align: middle;
 }
 
@@ -814,26 +815,78 @@ body{
   }
 }
 
-/* Medium devices (tablets, 601px to 1024px) */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
+/* Medium devices (tablets 1024px) */
+@media (max-width: 1024px) {
+  #navbar .container .nav .logo{
+    margin-left: 8%;
+  }
+  
   #navbar .container .nav ul {
-    margin-left: 0;
+    margin-left: 18%;
   }
 
   #navbar .container .nav .info{
     display: none;
   }
 
+  #hero-page .container .circle{
+    display: none;
+  }
+
   #hero-page .container .main-text h1 {
-    font-size: 80px;
+    font-size: 70px;
+    margin-top: 20%;
+    margin-left: 50px;
+  }
+
+  #intro .container .intro-text{
+    margin-left: 45%;
+    margin-top: -18%;
   }
 
   #our-work .container .marketing {
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
   }
 
   #services .container .our-services {
     grid-template-columns: 1fr 1fr;
   }
+
+  #description .container .wrapper .slider-text{
+    margin-top: 0;
+  }
+
+  #description .container .wrapper .slide .roll-number{
+    font-size: 130px;
+    margin-top: 6%;
+    margin-left: -30%;
+  }
+
+  #description .container .wrapper .slide .roll-number div{
+    margin-left: -50%;
+  }
+
+  #description .container .wrapper .slide .roll-mask .roll-text{
+    font-size: 76px;
+  }
+
+  #description .container .wrapper .slide .company-logo .company-contact img{
+    width: 130px;
+    height: 130px;
+  }
+
+  #description .container .wrapper .slide .company-logo .company-contact h3{
+    margin-bottom: 15%;
+  }
+
+  #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"] {
+  font-size: 16px;
+}
+
+#description .container .wrapper .slide  .company-logo .contact-mail .mail-details .submit{
+  font-size: 16px;
+}
+
+  
 }
