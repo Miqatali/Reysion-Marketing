@@ -50,32 +50,30 @@ const animatedText = document.getElementById('animatedText');
 
   // for loading button
 
-//   function handleSubmit(button) {
-//   const emailInput = document.getElementById('email');
-//   const emailValue = emailInput.value.trim();
-//   const btnText = button.querySelector('.btn-text');
-//   const spinner = button.querySelector('.spinner');
+function handleSubmit(button) {
+  const emailInput = document.getElementById('email');
+  const emailValue = emailInput.value.trim();
 
-//   // Check if email is not empty
-//   if (emailValue === '') {
-//     alert("Please enter your email.");
-//     return;
-//   }else(){
-//     alert("Form submitted");
-//   }
+  const btnText = button.querySelector('.btn-text');
+  const spinner = button.querySelector('.spinner');
 
-//   // Show spinner, hide arrow
-//   btnText.style.display = 'none';
-//   spinner.style.display = 'inline-block';
+  // Prevent default form submission
+  event.preventDefault();
 
-//   // Simulate processing delay
-//   setTimeout(() => {
-//     // Hide spinner, show arrow again
-//     btnText.style.display = 'inline';
-//     spinner.style.display = 'none';
+  if (emailValue === '') {
+    alert("Please enter your email.");
+    return; // Do nothing
+  }
 
-//     alert("Form submitted!");
-//     // Optionally clear the input
-//     // emailInput.value = '';
-//   }, 2000);
-// }
+  // Show spinner and hide icon
+  btnText.style.display = 'none';
+  spinner.style.display = 'inline-block';
+
+  // Simulate form processing
+  setTimeout(() => {
+    spinner.style.display = 'none';
+    btnText.style.display = 'inline-block';
+    alert("Thankyou for subscribing our newsletter");
+    emailInput.value = ''; // Optional: clear the input field
+  }, 2000);
+}
