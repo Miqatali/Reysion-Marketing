@@ -48,10 +48,6 @@ body{
   letter-spacing: 3px;
 }
 
-
-
-
-
 #navbar .container .nav .info .line{
   width: 100%;
   height: 0px;
@@ -90,9 +86,24 @@ body{
 
 #navbar .container .nav .info:hover::after, .info:hover::before {
   transform: scaleX(1);
-  
 }
 
+#navbar .container .nav .burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+}
+
+#navbar .container .nav .burger .burger-line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
 
 /* css for hero-page */
 #hero-page .container .circle{
@@ -752,71 +763,13 @@ body{
   background: #dd4b39;
 }
 
-@media screen and (max-width: 600px) {
-  #navbar .container .nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #navbar .container .nav .logo {
-    margin-left: 0;
-    margin-bottom: 15px;
-  }
-
-  #navbar .container .nav ul {
-    flex-direction: column;
-    margin-left: 0;
-  }
-
-  #navbar .container .nav ul li {
-    margin: 10px 0;
-  }
-
-  #navbar .container .nav .info{
-    display: none;
-  }
-
-  #hero-page .container .main-text h1 {
-    font-size: 40px;
-  }
-
-  #hero-page .container .circle{
-    display: none;
-  }
-
-  #our-work .container .marketing {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  #services .container .our-services {
-    grid-template-columns: 1fr;
-    margin: 10% 5%;
-  }
-
-  #description .container .wrapper .slider-text {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  #description .container .wrapper .roll-work {
-    margin: 0 10%;
-    text-align: left;
-  }
-
-  #description .container .wrapper .slide .company-logo {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 20px;
-  }
-
-  #description .container .wrapper .slide .company-logo .contact-mail {
-    margin: 0 auto;
-  }
+@media screen and (max-width: 768px) {
+  
 }
 
+
 /* Medium devices (tablets 1024px) */
-@media (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   #navbar .container .nav .logo{
     margin-left: 8%;
   }
@@ -836,7 +789,7 @@ body{
   #hero-page .container .main-text h1 {
     font-size: 70px;
     margin-top: 20%;
-    margin-left: 50px;
+    margin-left: 10px;
   }
 
   #intro .container .intro-text{

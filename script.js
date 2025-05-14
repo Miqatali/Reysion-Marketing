@@ -77,3 +77,6 @@ function handleSubmit(button) {
     emailInput.value = ''; // Optional: clear the input field
   }, 2000);
 }
+
+
+// js for navbar button
