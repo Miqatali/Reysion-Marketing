@@ -682,6 +682,7 @@ body{
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  margin-bottom: 10%;
 }
 
 #description .container .wrapper .slide .links .copyright-tag{
@@ -692,11 +693,11 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#description .container .wrapper .slide .links{
+/* #description .container .wrapper .slide .links{
   margin: 0;
   padding:0;
   margin-bottom: 10%;
-}
+} */
 
 #description .container .wrapper .slide .links .animated-link ul {
   display: flex;
