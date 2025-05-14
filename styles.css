@@ -767,84 +767,8 @@ body{
   background: #dd4b39;
 }
 
-/* @media screen and (max-width: 768px) {
-  
-}
 
 
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  #navbar .container .nav .logo{
-    margin-left: 8%;
-  }
-  
-  #navbar .container .nav ul {
-    margin-left: 18%;
-  }
-
-  #navbar .container .nav .info{
-    display: none;
-  }
-
-  #hero-page .container .circle{
-    display: none;
-  }
-
-  #hero-page .container .main-text h1 {
-    font-size: 70px;
-    margin-top: 20%;
-    margin-left: 10px;
-  }
-
-  #intro .container .intro-text{
-    margin-left: 45%;
-    margin-top: -18%;
-  }
-
-  #our-work .container .marketing {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 100px;
-  }
-
-  #services .container .our-services {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #description .container .wrapper .slider-text{
-    margin-top: 0;
-  }
-
-  #description .container .wrapper .slide .roll-number{
-    font-size: 130px;
-    margin-top: 6%;
-    margin-left: -30%;
-  }
-
-  #description .container .wrapper .slide .roll-number div{
-    margin-left: -50%;
-  }
-
-  #description .container .wrapper .slide .roll-mask .roll-text{
-    font-size: 76px;
-  }
-
-  #description .container .wrapper .slide .company-logo .company-contact img{
-    width: 130px;
-    height: 130px;
-  }
-
-  #description .container .wrapper .slide .company-logo .company-contact h3{
-    margin-bottom: 15%;
-  }
-
-  #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"] {
-  font-size: 16px;
-}
-
-#description .container .wrapper .slide  .company-logo .contact-mail .mail-details .submit{
-  font-size: 16px;
-} 
-} */
 
 /* ==================== GENERAL STYLES ==================== */
 @media (max-width: 1600px) {
@@ -859,9 +783,74 @@ body{
     #navbar .container .nav .logo {
         margin-left: 100px;
     }
+    #navbar .container .nav ul{
+      margin-left: 16%;
+    } 
+    #navbar .container .nav ul li {
+        margin-left: 30px;
+    }
     
-    #hero-page .container .main-text {
-        margin: -8% 15% 0 15%;
+    #navbar .container .nav .info {
+        margin: 1% 0 0 10%;
+    }
+    
+    /* Hero section */
+    #hero-page .container .main-text h1 {
+        font-size: 80px;
+        margin-top: -24%;
+    }
+    
+    #hero-page .container .circle {
+        margin-left: 79%;
+    }
+
+    /* intro section */
+    #intro .container .intro-text{
+      margin: -13% 0 0 47%;
+    }
+    
+    /* Our Work section */
+    #our-work .container .marketing {
+        gap: 80px;
+        margin: 12% 5% 10% 10%;
+    }
+    
+    #our-work .container .marketing h2 {
+        font-size: 80px;
+    }
+    
+    /* Services section */
+    #services .container .our-services {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+    
+    /* Description section */
+    #description .container .wrapper .slide{
+      width: 100%;
+    }
+     #description .container .wrapper .slider-text{
+      margin-top: 0%;
+     }
+    #description .container .wrapper .slider-text .roll-number {
+        font-size: 110px;
+        margin-top: 12%;
+    }
+    
+    #description .container .wrapper .slider-text .roll-mask .roll-text {
+        font-size: 70px;
+    }
+    #description .container .wrapper .slide .company-logo .company-contact img{
+      width: 150px;
+      height: 150px;
+      margin-bottom: -20px;
+    }
+    #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
+      font-size: 16px;
+    }
+    #description .container .wrapper .slide .links{
+      margin-top: 5%;
+      margin-bottom: 6%;
     }
 }
 
@@ -948,7 +937,6 @@ body{
     
     #navbar .container .nav .logo {
         margin-left: 0;
-        /* order: 1; */
     }
     
     #navbar .container .nav .nav-links {
@@ -957,12 +945,6 @@ body{
         margin-left: 130px;
         margin-top: -4%;
     }
-    
-    /* #navbar .container .nav .nav-links.active {
-        display: inline-block;
-    }
-     */
-    
     #navbar .container .nav ul li {
         margin: 15px ;
     }
@@ -982,10 +964,6 @@ body{
         margin: 19% 0 0 4%;
     }
     
-    /* #hero-page .container .side-text {
-        display: none;
-    } */
-    
     /* Intro section */
     #intro .container .intro-text {
         margin: -23% 0 0 40%;
@@ -1003,10 +981,6 @@ body{
         margin: 12% 18% 10% 18%;
         text-align: center;
     }
-    /* #our-work .container .marketing  p{
-      width: 60%;
-      text-align: center;
-    } */
     
     /* Services section */
     #services .container .tag-line p {
@@ -1028,10 +1002,6 @@ body{
         font-size: 100px;
         text-align: center;
     }
-    
-    /* #description .container .wrapper .slider-text .roll-mask {
-        margin-top: 20px;
-    } */
     
     #description .container .wrapper .roll-work {
         margin-left: 15%;
