@@ -8,6 +8,7 @@ body{
 #navbar .container .nav {
     display: flex;
     margin-top: 15px;
+    padding: 15px 15px;
   }
 
 #navbar .container .nav .logo {
@@ -106,6 +107,7 @@ body{
   background-color: #000;
   transition: all 0.3s ease;
 }
+
 
 /* css for hero-page */
 #hero-page .container .circle{
@@ -937,45 +939,58 @@ body{
 /* ==================== TABLET PORTRAIT (768px) ==================== */
 @media (max-width: 768px) {
     /* Navbar - switch to mobile menu */
-    #navbar .container .nav {
+    /* #navbar .container .nav {
         padding: 15px 25px 0 25px;
-    }
+    } */
     
     #navbar .container .nav .logo {
         margin-left: 0;
     }
     
     #navbar .container .nav .nav-links {
-     position: fixed;
+     position: absolute;
       top: 80px;
-      right: -100%;
+      right: 100%;
       width: auto;
       height: auto;
       background-color: #fff;
       flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
+      align-items: flex-start; /* This makes items align left in a flex column */
+      text-align: left;
       transition: right 0.5s ease;
-      z-index: 99;
+      z-index: 100;
     }
 
     #navbar .container .nav .nav-links.active {
       right: 20px;
     }
 
+    /* #navbar .container .nav ul li a{
+      display: flex;
+      justify-content: left;
+    } */
+
     #navbar .container .nav ul{
       border: 2px solid #000;
+      border-radius: 20px;
+      
     }
 
     #navbar .container .nav ul li {
-      border-bottom: 2px solid #949393;
+      border-bottom: 4px solid #949393;
+      margin: 15px;
+      padding: 0;
       
-      margin: 20px ;
+    }
+
+    #navbar .container .nav ul li a{
+      text-align: right;
+      
     }
 
     #navbar .container .nav .hamburger {
       display: flex; /* Show on mobile */
-      /* margin: 2% 0 0 77%; */
+     
     }
 
     #navbar .container .nav .hamburger.active span:nth-child(1) {
@@ -987,7 +1002,7 @@ body{
     }
 
     #navbar .container .nav .hamburger.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px);
+      transform: rotate(-45deg) translate(7px, -7px);
     } 
     
     #navbar .container .nav .info {
@@ -1034,7 +1049,7 @@ body{
       height: 100%;
     }
     #description .container .wrapper .slider-text {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
        margin-left: 0 !important;
        margin-top: -10%;
     }
