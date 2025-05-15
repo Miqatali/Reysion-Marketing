@@ -20,24 +20,6 @@ body{
     height: 50px;
 }
 
-#navbar .container .nav .hamburger {
-    display: none; /* Hidden by default on desktop */
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-    z-index: 100;
-}
-
-#navbar .container .nav .hamburger span {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    transition: all 0.3s ease;
-}
-
 #navbar .container .nav .nav-links{
     display: flex;
     justify-content: center;
@@ -106,22 +88,24 @@ body{
   transform: scaleX(1);
 }
 
-/* #navbar .container .nav .burger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 21px;
+#navbar .container .nav .hamburger {
+  display: none; /* Hidden by default on desktop */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 100;
+  margin: 2% 0 0 75%;
 }
 
-#navbar .container .nav .burger .burger-line {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: #333;
-    transition: all 0.3s ease;
-} */
+#navbar .container .nav .hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
 
 /* css for hero-page */
 #hero-page .container .circle{
@@ -962,15 +946,15 @@ body{
     }
     
     #navbar .container .nav .nav-links {
-     position: absolute;
+     position: fixed;
       top: 80px;
       right: -100%;
-      width: 20%;
+      width: auto;
       height: auto;
       background-color: #fff;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       transition: right 0.5s ease;
       z-index: 99;
     }
@@ -991,7 +975,7 @@ body{
 
     #navbar .container .nav .hamburger {
       display: flex; /* Show on mobile */
-      margin: 2% 0 0 77%;
+      /* margin: 2% 0 0 77%; */
     }
 
     #navbar .container .nav .hamburger.active span:nth-child(1) {
