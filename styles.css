@@ -25,7 +25,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 30px;
 }
 
 #navbar .container .nav ul {
@@ -788,7 +787,7 @@ body{
         margin-left: 100px;
     }
     #navbar .container .nav ul{
-      margin-left: 16%;
+      margin-left: 10%;
     } 
     #navbar .container .nav ul li {
         margin-left: 30px;
@@ -939,9 +938,6 @@ body{
 /* ==================== TABLET PORTRAIT (768px) ==================== */
 @media (max-width: 768px) {
     /* Navbar - switch to mobile menu */
-    /* #navbar .container .nav {
-        padding: 15px 25px 0 25px;
-    } */
     
     #navbar .container .nav .logo {
         margin-left: 0;
@@ -951,46 +947,38 @@ body{
      position: absolute;
       top: 80px;
       right: 100%;
-      width: auto;
+      width: 25%;
       height: auto;
       background-color: #fff;
       flex-direction: column;
       align-items: flex-start; /* This makes items align left in a flex column */
       text-align: left;
-      transition: right 0.5s ease;
+      transition: right 0.7s ease;
       z-index: 100;
+      
     }
 
     #navbar .container .nav .nav-links.active {
       right: 20px;
+      
     }
 
-    /* #navbar .container .nav ul li a{
-      display: flex;
-      justify-content: left;
-    } */
-
     #navbar .container .nav ul{
-      border: 2px solid #000;
+      border: 2px solid gray;
       border-radius: 20px;
       
     }
 
     #navbar .container .nav ul li {
-      border-bottom: 4px solid #949393;
-      margin: 15px;
+      border-bottom: 1px solid #949393;
+      margin-left: 20px;
       padding: 0;
-      
-    }
-
-    #navbar .container .nav ul li a{
-      text-align: right;
-      
+      line-height: 60px;
     }
 
     #navbar .container .nav .hamburger {
       display: flex; /* Show on mobile */
-     
+      
     }
 
     #navbar .container .nav .hamburger.active span:nth-child(1) {
