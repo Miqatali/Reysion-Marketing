@@ -19,12 +19,30 @@ body{
     width: 140px;
     height: 50px;
 }
+
+#navbar .container .nav .hamburger {
+    display: none; /* Hidden by default on desktop */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#navbar .container .nav .hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
 #navbar .container .nav .nav-links{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
-    
 }
 
 #navbar .container .nav ul {
@@ -857,11 +875,14 @@ body{
 /* ==================== TABLET LANDSCAPE (1024px) ==================== */
 @media (max-width: 1024px) {
     /* Navbar adjustments */
+    #navbar .container .nav .nav-links{
+      
+    }
     #navbar .container .nav ul{
-      margin-left: 22%;
+      margin-left: 24%;
     } 
     #navbar .container .nav ul li {
-        margin-left: 30px;
+      margin-left: 30px;
     }
     
     #navbar .container .nav .info {
@@ -872,6 +893,7 @@ body{
     #hero-page .container .main-text h1 {
         font-size: 70px;
         margin-top: -20%;
+        margin-left: -5%;
     }
     
     #hero-page .container .circle {
@@ -940,14 +962,50 @@ body{
     }
     
     #navbar .container .nav .nav-links {
-        width: 100%;
-        padding: 20px 0;
-        margin-left: 130px;
-        margin-top: -4%;
+     position: fixed;
+      top: 80px;
+      right: -100%;
+      width: 20%;
+      height: 50vh;
+      background-color: #fff;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: right 0.5s ease;
+      z-index: 99;
+      box-shadow: -5px 0 15px rgba(0,0,0,0.1);
     }
+
+    #navbar .container .nav .nav-links.active {
+      right: 20px;
+    }
+
+    #navbar .container .nav ul{
+      border: 2px solid #000;
+    }
+
     #navbar .container .nav ul li {
-        margin: 15px ;
+      border-bottom: 2px solid #949393;
+      margin-left: -10%;
+      margin: 15px 0;
     }
+
+    #navbar .container .nav .hamburger {
+      display: flex; /* Show on mobile */
+      margin: 2% 0 0 77%;
+    }
+
+    #navbar .container .nav .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #navbar .container .nav .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    #navbar .container .nav .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+    } 
     
     #navbar .container .nav .info {
         display: none;
@@ -961,12 +1019,12 @@ body{
     
     #hero-page .container .main-text h1 {
         font-size: 60px;
-        margin: 19% 0 0 4%;
+        margin: 19% 0 0 3%;
     }
     
     /* Intro section */
     #intro .container .intro-text {
-        margin: -23% 0 0 40%;
+        margin: -23% 0 0 42%;
     }
     
     /* Our Work section */
