@@ -1278,6 +1278,9 @@ body{
     #description .container .wrapper .slide .links .copyright-tag{
       margin-top: 70%;
     }
+    #description .container .wrapper .slide .company-logo{
+      margin-top: 25%;
+    }
 }
 
 /* ==================== SMALL MOBILE (360px) ==================== */
