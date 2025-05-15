@@ -954,7 +954,7 @@ body{
 @media (max-width: 768px) {
     /* Navbar - switch to mobile menu */
     #navbar .container .nav {
-        padding: 15px 20px;
+        padding: 15px 25px 0 25px;
     }
     
     #navbar .container .nav .logo {
@@ -962,18 +962,17 @@ body{
     }
     
     #navbar .container .nav .nav-links {
-     position: fixed;
+     position: absolute;
       top: 80px;
       right: -100%;
       width: 20%;
-      height: 50vh;
+      height: auto;
       background-color: #fff;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       transition: right 0.5s ease;
       z-index: 99;
-      box-shadow: -5px 0 15px rgba(0,0,0,0.1);
     }
 
     #navbar .container .nav .nav-links.active {
@@ -986,8 +985,8 @@ body{
 
     #navbar .container .nav ul li {
       border-bottom: 2px solid #949393;
-      margin-left: -10%;
-      margin: 15px 0;
+      
+      margin: 25px ;
     }
 
     #navbar .container .nav .hamburger {
