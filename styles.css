@@ -1229,6 +1229,11 @@ body{
     }
     
     /* Description section */
+    #description .container .wrapper .slide{
+      height: 100vh;
+    }
+
+
     #description .container .wrapper .slider-text .roll-number {
         font-size: 80px;
     }
@@ -1266,7 +1271,7 @@ body{
         line-height: 62px;
         font-size: 30px;
         margin-bottom: 50px;
-        margin-left: -130%;
+        margin-left: -120%;
         margin-top: 15%;
     }
 
@@ -1278,9 +1283,31 @@ body{
 
 /* ==================== SMALL MOBILE (360px) ==================== */
 @media (max-width: 360px) {
+  
+
+
+    #navbar .container .nav .hamburger {
+      display: flex; /* Show on mobile */
+      margin-left: 40%;
+    }
+
     /* Hero section */
     #hero-page .container .main-text h1 {
-        font-size: 32px;
+        font-size: 45px;
+    }
+    #hero-page .container .side-text{
+      display: none;
+    }
+
+    #hero-page .container .line{
+      display: none;
+    }
+
+    /* intro section */
+    #intro .container .intro-text .arrow-button{
+      width: 80px;
+      height: 80px;
+      margin: 80% 0 10% 10%;
     }
     
     /* Our Work section */
@@ -1293,11 +1320,29 @@ body{
     }
     
     /* Description section */
+    #description .container .wrapper .slide{
+      height: 100vh;
+    }
+    #description .container .wrapper .slide1 .roll-work  p{
+        margin-bottom: -10%;
+    }
+
+
     #description .container .wrapper .slider-text .roll-number {
         font-size: 60px;
     }
     
     #description .container .wrapper .slider-text .roll-text {
         font-size: 30px;
+    }
+
+    #description .container .wrapper .slide .links .animated-link ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 42px;
+        font-size: 25px;
+        margin-bottom: 50px;
+        margin-left: -130%;
+        margin-top: 15%;
     }
 }
