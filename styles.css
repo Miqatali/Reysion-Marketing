@@ -671,6 +671,8 @@ body{
   border-radius: 5px;
   cursor: pointer;
   font-size: 26px;
+  width: 46px;
+  height: 46px;
 }
 
 #description .container .wrapper .slide .company-logo .contact-mail .mail-details .privacy-tag{
@@ -845,14 +847,17 @@ body{
     #description .container .wrapper .slide .company-logo .company-contact img{
       width: 150px;
       height: 150px;
-      margin-bottom: -20px;
+      
+    }
+    #description .container .wrapper .slide .company-logo .company-services ul{
+      margin-top: -60px;
     }
     #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
       font-size: 16px;
     }
     #description .container .wrapper .slide .links{
-      margin-top: 5%;
-      margin-bottom: 6%;
+      margin-top: 0%;
+      margin-bottom: 4%;
     }
 }
 
@@ -1076,7 +1081,7 @@ body{
     }
     #description .container .wrapper .slide .links{
       margin-top: -1%;
-      margin-bottom: 8%;
+      margin-bottom: 6%;
     }
     #description .container .wrapper .slide .links .animated-link ul li a {
       width: 50px;
@@ -1174,6 +1179,7 @@ body{
       height: 40px;
     }
 
+
     #description .container .wrapper .slide .links h1{
       font-size: 15px;
     }
@@ -1258,7 +1264,7 @@ body{
 
     #description .container .wrapper .slide .company-logo .company-contact h3{
       margin-top: -20px;
-      font-size: 20px;
+      font-size: 15px;
     }
 
     #description .container .wrapper .slide .company-logo .contact-mail{
@@ -1276,11 +1282,12 @@ body{
     }
 
     #description .container .wrapper .slide .links .copyright-tag{
-      margin-top: 70%;
+      margin-top: 50%;
     }
     #description .container .wrapper .slide .company-logo{
-      margin-top: 25%;
+      margin-top: 10%;
     }
+    
 }
 
 /* ==================== SMALL MOBILE (360px) ==================== */
@@ -1347,4 +1354,7 @@ body{
         margin-left: -130%;
         margin-top: 15%;
     }
+    /* #description .container .wrapper .slide .links  .copyright-tag{
+      margin-right: -70px;
+    } */
 }
