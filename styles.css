@@ -698,12 +698,6 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* #description .container .wrapper .slide .links{
-  margin: 0;
-  padding:0;
-  margin-bottom: 10%;
-} */
-
 #description .container .wrapper .slide .links .animated-link ul {
   display: flex;
   position: absolute;
