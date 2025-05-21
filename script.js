@@ -5,6 +5,10 @@ text.innerHTML = text.innerText.split("").map(
   ).join("");
 
 
+function handleClick() {
+    window.location.href = "https://reysion-its.com/contact"; // or any URL
+}
+
 
 
 
@@ -63,6 +67,12 @@ function handleSubmit(button) {
   if (emailValue === '') {
     alert("Please enter your email.");
     return; // Do nothing
+  }
+
+    // Check if email ends with @gmail.com
+  if (!emailValue.endsWith('@gmail.com')) {
+    alert("Please enter a valid mail address (e.g., yourname@gmail.com).");
+    return;
   }
 
   // Show spinner and hide icon
