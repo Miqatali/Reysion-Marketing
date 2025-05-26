@@ -98,7 +98,7 @@ body{
   height: 25px;
   cursor: pointer;
   z-index: 100;
-  margin: 2% 0 0 75%;
+  margin: 2% 5% 0 0;
 }
 
 #navbar .container .nav .hamburger span {
@@ -782,7 +782,7 @@ body{
 @media (max-width: 1440px) {
     /* Standard desktop adjustments */
     #navbar .container .nav .logo {
-        margin-left: 80px;
+        margin-left: 20px;
         margin-top: 10px;
     }
    
@@ -863,14 +863,14 @@ body{
 /* ==================== TABLET LANDSCAPE (1024px) ==================== */
 @media (max-width: 1024px) {
     /* Navbar adjustments */
-    #navbar .container .nav .logo{
+    /* #navbar .container .nav .logo{
       margin-top: 10px;
-      margin-left: 50px;
-    }
+      margin-left: 20px;
+    } */
 
-    #navbar .container .nav ul li{
+    /* #navbar .container .nav ul li{
       margin-left: 30px;
-    }
+    } */
 
     #navbar .container .nav ul li a{
       font-size: 20px;
@@ -977,8 +977,8 @@ body{
 @media (max-width: 768px) {
     /* Navbar - switch to mobile menu */
     
-    #navbar .container .nav .logo {
-        margin-left: 10px;
+    #navbar .container .nav {
+        padding: 15px;
     }
     
     #navbar .container .nav .nav-links {
@@ -1043,7 +1043,7 @@ body{
     
     #hero-page .container .main-text h1 {
         font-size: 60px;
-        margin: 19% -2% 0 -1%;
+        margin: 19% -1% 0 5%;
         padding: 0;
     }
     
@@ -1151,9 +1151,9 @@ body{
 
 /* ==================== MOBILE LANDSCAPE (600px) ==================== */
 @media (max-width: 600px) {
-  #navbar .container .nav .logo{
+  /* #navbar .container .nav .logo{
     margin-left: 5%;
-  }
+  } */
 
   #navbar .container .nav .nav-links{
     width: 30%;
