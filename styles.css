@@ -116,7 +116,7 @@ body{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-left: 83%;
+  margin-left: 85%;
   margin-top: 3%;
   display: flex;
   justify-content: center;
@@ -936,7 +936,7 @@ body{
     #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
       padding-bottom: 8px;
       height: 40px;
-      width: 35px;
+      width: 38px;
     }
     #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit .btn-text svg{
       width: 22px;
@@ -954,20 +954,21 @@ body{
 }
 
 /* ==================== TABLET PORTRAIT (960px) ==================== */
-@media (max-width: 900px){
+@media (max-width: 880px){
   #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
-    font-size: 12px;
+    font-size: 11px;
   }
 
   #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
-      padding-bottom: 15px;
-      height: 36px;
-      width: 28px;
+      
+      height: 37px;
+      width: 35px;
   }
 
   #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit .btn-text svg{
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+    
   }
 
 }
@@ -1113,6 +1114,11 @@ body{
     }
     #description .container .wrapper .slide .company-logo .contact-mail .mail-details .privacy-tag{
       display: none;
+    }
+    #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
+      padding-bottom: 10px;
+      height: 36px;
+      width: 35px;
     }
     #description .container .wrapper .slide .links{
       margin-top: -1%;
