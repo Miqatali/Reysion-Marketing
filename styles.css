@@ -755,7 +755,7 @@ body{
 }
 
 #description .container .wrapper .slide .links .animated-link ul li:nth-child(2) a:before{
-  background: #55acee;
+  background: #000;
 }
 #description .container .wrapper .slide .links .animated-link ul li:nth-child(3) a:before {
   background: #0077b5;
@@ -785,11 +785,7 @@ body{
         margin-left: 80px;
         margin-top: 10px;
     }
-    /* #navbar .container .nav .info{
-      margin-right: 40px;
-      margin-top: 15px;
-    } */
-    
+   
     /* Hero section */
     #hero-page .container .main-text h1 {
         font-size: 100px;
@@ -845,6 +841,11 @@ body{
     }
     #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
       font-size: 16px;
+    }
+    #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
+      padding-bottom: 8px;
+      height: 40px;
+      width: 40px;
     }
     #description .container .wrapper .slide .links{
       margin-top: 0%;
@@ -933,17 +934,42 @@ body{
     
     }
     #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
-      padding-bottom: 20px;
+      padding-bottom: 8px;
       height: 40px;
+      width: 35px;
+    }
+    #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit .btn-text svg{
+      width: 22px;
+      height: 22px;
+      margin-top: 2px;
     }
 
     #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
-      font-size: 16px;
+      font-size: 14px;
     }
     #description .container .wrapper .slide .links{
       margin-top: 5%;
-      margin-bottom: 6%;
+      margin-bottom: 8%;
     }
+}
+
+/* ==================== TABLET PORTRAIT (960px) ==================== */
+@media (max-width: 900px){
+  #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
+    font-size: 12px;
+  }
+
+  #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
+      padding-bottom: 15px;
+      height: 36px;
+      width: 28px;
+  }
+
+  #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit .btn-text svg{
+    width: 20px;
+    height: 20px;
+  }
+
 }
 
 /* ==================== TABLET PORTRAIT (768px) ==================== */
