@@ -776,11 +776,6 @@ body{
       margin-top: 15px;
       font-size: 15px;
     }
-   
-    /* Hero section */
-    /* #hero-page .container .main-text {
-      margin: -10% 18% 0 18%;
-    } */
     #hero-page .container .main-text h1 {
       font-size: 80px;
       margin: -10% 10% 0 10%;
@@ -1035,7 +1030,7 @@ body{
     }
 }
 
-/* ==================== TABLET PORTRAIT (960px) ==================== */
+/* ==================== TABLET PORTRAIT (880px) ==================== */
 @media (max-width: 880px){
   #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
     font-size: 11px;
