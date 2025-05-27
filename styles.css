@@ -816,9 +816,6 @@ body{
     #description .container .wrapper .slide{
       width: 100%;
     }
-    /* #description .container .wrapper .slider-text{
-      margin-top: 0%;
-    } */
     #description .container .wrapper .slider-text .roll-number {
       font-size: 150px;
       margin-top: 12%;
@@ -830,9 +827,6 @@ body{
       width: 180px;
       height: 180px; 
     }
-    /* #description .container .wrapper .slide .company-logo .company-services ul{
-      margin-top: 60px;
-    } */
     #description .container .wrapper .slide .company-logo .contact-mail input[type="email"]{
       font-size: 18px;
     }
@@ -1166,7 +1160,7 @@ body{
     }
     #description .container .wrapper .slide .links{
       margin-top: -1%;
-      margin-bottom: 5%;
+      margin-bottom: 6%;
     }
     #description .container .wrapper .slide .links .animated-link ul li a {
       width: 50px;
