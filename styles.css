@@ -21,19 +21,12 @@ body{
     width: 140px;
     height: 50px;
 }
-
-/* #navbar .container .nav .nav-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 #navbar .container .nav ul {
     list-style: none;
     display: flex;
     /* margin-left: 12%; */
     padding: 0;
-  }
+}
 
 #navbar .container .nav ul li {
     margin: 20px;
@@ -70,7 +63,7 @@ body{
   width: 100%;
   height: 3px;
   background: linear-gradient(to right, blue, blue);
-  bottom: 3px;
+  bottom: 0;
   left: 0;
   transform: scaleX(0);
   transform-origin: right;
@@ -769,24 +762,28 @@ body{
 @media (max-width: 2560px){
     /* Standard desktop adjustments */
     #navbar .container .nav .logo{
-      margin-top: 10px;
+      margin-top: 14px;
     }
     #navbar .container .nav .logo img{
-      width: 200px;
-      height: 70px;
+      width: 160px;
+      height: 50px;
     }
     #navbar .container .nav ul li a{
-      font-size: 40px;
-      margin: 20px;
+      font-size: 30px;
+      margin: 10px;
     } 
     #navbar .container .nav .info{
-      margin-top: 20px;
-      font-size: 20px;
+      margin-top: 15px;
+      font-size: 15px;
     }
    
     /* Hero section */
+    /* #hero-page .container .main-text {
+      margin: -10% 18% 0 18%;
+    } */
     #hero-page .container .main-text h1 {
-      font-size: 120px;
+      font-size: 80px;
+      margin: -10% 10% 0 10%;
     }
     #hero-page .container .circle {
       margin-left: 82%;
@@ -800,7 +797,13 @@ body{
 
     /* intro section */
     #intro .container .intro-text{
-      margin: -7% 0 0 47%;
+      margin: -8% 0 0 47%;
+    }
+
+    /* clients section */
+    #clients .logo-container .logo-slide img {
+      height: 100px;
+      margin: 0 70px;
     }
     
     /* Our Work section */
@@ -842,7 +845,7 @@ body{
       margin: 5px;
     }
     #navbar .container .nav ul li a{
-      font-size: 30px;
+      font-size: 25px;
       margin: 20px;
     } 
     #navbar .container .nav .info{
@@ -954,7 +957,7 @@ body{
     #hero-page .container .main-text h1 {
         font-size: 70px;
         margin-top: 20%;
-        margin-left: 5%;
+        margin: 19% -2% 0 7%;
     }  
     #hero-page .container .circle {
         display: none;
@@ -1086,13 +1089,13 @@ body{
     }
     #hero-page .container .main-text h1 {
         font-size: 60px;
-        margin: 19% -1% 0 5%;
+        margin: 19% -11% 0 0;
         padding: 0;
     }
 
     /* Intro section */
     #intro .container .intro-text {
-        margin: -23% 0 0 42%;
+        margin: -23% 0 0 45%;
     }
 
     /* Our Work section */
@@ -1203,7 +1206,7 @@ body{
 
   /* intro section */
   #intro .container .intro-text{
-    margin: -33% 0 0 39%;
+    margin: -33% 0 0 40%;
   }
 
   /* Clients section */
