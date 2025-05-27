@@ -816,22 +816,18 @@ body{
     }
     
     /* Description section */
-    #description .container .wrapper .slide{
-      width: 100%;
+    #description .container .wrapper .slide .company-logo .company-contact h2{
+      font-size: 25px;
     }
-    #description .container .wrapper .slider-text .roll-number {
-      font-size: 150px;
-      margin-top: 12%;
-    }  
-    #description .container .wrapper .slider-text .roll-mask .roll-text {
-      font-size: 90px;
+    #description .container .wrapper .slide .company-logo .company-contact h3{
+      font-size: 25px;
     }
-    #description .container .wrapper .slide .company-logo .company-contact img{
-      width: 180px;
-      height: 180px; 
+    #description .container .wrapper .slide .company-logo .company-contact h4{
+      font-size: 25px;
     }
-    #description .container .wrapper .slide .company-logo .contact-mail input[type="email"]{
-      font-size: 18px;
+    #description .container .wrapper .slide .links{
+      margin-top: 5%;
+      margin-bottom: 10%;
     }
 }
 
@@ -918,6 +914,15 @@ body{
       padding-bottom: 8px;
       height: 40px;
       width: 40px;
+    }
+    #description .container .wrapper .slide .company-logo .company-contact h2{
+      font-size: 18px;
+    }
+    #description .container .wrapper .slide .company-logo .company-contact h3{
+      font-size: 18px;
+    }
+    #description .container .wrapper .slide .company-logo .company-contact h4{
+      font-size: 18px;
     }
     #description .container .wrapper .slide .links{
       margin-top: 1%;
@@ -1015,6 +1020,15 @@ body{
     }
     #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
       font-size: 14px;
+    }
+    #description .container .wrapper .slide .company-logo .company-contact h2{
+      font-size: 16px;
+    }
+    #description .container .wrapper .slide .company-logo .company-contact h3{
+      font-size: 16px;
+    }
+    #description .container .wrapper .slide .company-logo .company-contact h4{
+      font-size: 16px;
     }
     #description .container .wrapper .slide .links{
       margin-top: 5%;
