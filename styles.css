@@ -6,31 +6,29 @@ body{
     padding: 0;
 }
 #navbar .container .nav {
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-around;
-    padding: 15px 15px;
-  }
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+  padding: 15px 15px;
+}
 
 #navbar .container .nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 10px;
-  }
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
 #navbar .container .nav .logo img{
-    width: 140px;
-    height: 50px;
+  width: 140px;
+  height: 50px;
 }
 #navbar .container .nav ul {
-    list-style: none;
-    display: flex;
-    /* margin-left: 12%; */
-    padding: 0;
+  list-style: none;
+  display: flex;
+  padding: 0;
 }
 
 #navbar .container .nav ul li {
-    margin: 20px;
-    
+  margin: 20px; 
 }
 
 #navbar .container .nav ul li a {
@@ -55,30 +53,6 @@ body{
   margin-top: 10px;
   font-size: 15px;
   cursor: pointer;
-}
-
-#navbar .container .nav .info::after, .info::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(to right, blue, blue);
-  bottom: 2px;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease-out;
-  
-}
-
-#navbar .container .nav .info::before {
-  top: -9px;
-  transform-origin: left;
-  
-}
-
-#navbar .container .nav .info:hover::after, .info:hover::before {
-  transform: scaleX(1);
 }
 
 #navbar .container .nav .hamburger {
@@ -271,11 +245,7 @@ body{
 
 #clients .logo-container .logo-slide {
   display: inline-block;
-  animation-name: slide;
-  animation-duration: 30s;
-  
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: slide 30s linear infinite;
   
 }
 @keyframes slide {
@@ -297,7 +267,6 @@ body{
 
 #our-work .container {
   margin-top: 10%;
-
 }
 
 #our-work .container .animated-text{
@@ -550,12 +519,12 @@ body{
 #description .container .wrapper .slide .company-logo{
   color: white;
   display: grid;
-  grid-template-columns: 0.3fr 0.5fr 1fr;
+  grid-template-columns: 0.4fr 0.5fr 1fr;
   margin-left: 10%;
   margin-right: 10%;
 }
 
-#description .container .wrapper .slide  .company-logo .company-contact{
+#description .container .wrapper .slide .company-logo .company-contact{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
@@ -564,7 +533,7 @@ body{
 #description .container .wrapper .slide .company-logo .company-contact img{
   width: 180px;
   height: 180px;
-  margin: 0 0 0 0;
+  margin-top: 2%;
 }
 
 #description .container .wrapper .slide .company-logo .company-contact h2{
@@ -574,7 +543,7 @@ body{
 }
 
 #description .container .wrapper .slide .company-logo .company-contact h3{
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 1px;
   color: #fff;
   cursor: pointer;
@@ -594,7 +563,7 @@ body{
 }
 
 #description .container .wrapper .slide .company-logo .company-services ul{
-  margin-top: -30%;
+  margin-top: -50%;
 }
 
 #description .container .wrapper .slide .company-logo .company-services ul li {
@@ -606,7 +575,6 @@ body{
   font-size: 25px;
   text-decoration: none;
   color: #fff;
-  
 }
 
 #description .container .wrapper .slide .company-logo .company-services ul li a:hover{
@@ -629,7 +597,6 @@ body{
   border-radius: 50%;
   animation: spin 1s linear infinite;
   display: inline-block;
-  /* margin-left: 10px; */
   vertical-align: middle;
 }
 
@@ -679,7 +646,6 @@ body{
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
-  margin-bottom: 10%;
 }
 
 
@@ -760,72 +726,68 @@ body{
 
 /* ==================== GENERAL STYLES ==================== */
 @media (max-width: 2560px){
-    /* Standard desktop adjustments */
-    #navbar .container .nav .logo{
-      margin-top: 14px;
-    }
-    #navbar .container .nav .logo img{
-      width: 160px;
-      height: 50px;
-    }
-    #navbar .container .nav ul li a{
-      font-size: 30px;
-      margin: 10px;
-    } 
-    #navbar .container .nav .info{
-      margin-top: 15px;
-      font-size: 15px;
-    }
-    #hero-page .container .main-text h1 {
-      font-size: 80px;
-      margin: -10% 10% 0 10%;
-    }
-    #hero-page .container .circle {
-      margin-left: 82%;
-    }
+  /* Standard desktop adjustments */
+  #navbar .container .nav .logo{
+    margin-top: 14px;
+  }
+  #navbar .container .nav .logo img{
+    width: 160px;
+    height: 50px;
+  }
+  #navbar .container .nav ul li a{
+    font-size: 30px;
+    margin: 10px;
+  } 
+  #navbar .container .nav .info{
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  #hero-page .container .main-text h1 {
+    font-size: 80px;
+    margin: -10% 10% 0 10%;
+  }
+  #hero-page .container .circle {
+    margin-left: 82%;
+  }
+  /* clients section */
+  #clients .logo-container .logo-slide img {
+    height: 150px;
+    margin: 0 70px;
+  }
+  /* intro section */
+  #intro .container .intro-text{
+    margin: -8% 0 0 47%;
+  }
+  
+  /* Our Work section */
+  #our-work .container .marketing {
+    margin: 12% 5% 10% 10%;
+  }
+  
+  #our-work .container .marketing h2 {
+    font-size: 100px;
+  }
+  
+  /* Description section */
+  #description .container .wrapper .slide .company-logo .company-contact h2,
+  #description .container .wrapper .slide .company-logo .company-contact h3,
+  #description .container .wrapper .slide .company-logo .company-contact h4 {
+    font-size: 25px;
+  }
+  #description .container .wrapper .slide .links{
+    margin-top: 5%;
+    margin-bottom: 7%;
+  }
+}
 
-    /* clients section */
-    #clients .logo-container .logo-slide img {
-      height: 150px;
-      margin: 0 70px;
-    }
 
-    /* intro section */
-    #intro .container .intro-text{
-      margin: -8% 0 0 47%;
-    }
-
-    /* clients section */
+@media (max-width: 1600px){
+  /* clients section */
     #clients .logo-container .logo-slide img {
       height: 100px;
       margin: 0 70px;
     }
-    
-    /* Our Work section */
-    #our-work .container .marketing {
-      margin: 12% 5% 10% 10%;
-    }
-    
-    #our-work .container .marketing h2 {
-      font-size: 100px;
-    }
-    
-    /* Description section */
-    #description .container .wrapper .slide .company-logo .company-contact h2{
-      font-size: 25px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact h3{
-      font-size: 25px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact h4{
-      font-size: 25px;
-    }
-    #description .container .wrapper .slide .links{
-      margin-top: 5%;
-      margin-bottom: 7%;
-    }
 }
-
 
 
 @media (max-width: 1440px) {
@@ -909,13 +871,9 @@ body{
       height: 40px;
       width: 40px;
     }
-    #description .container .wrapper .slide .company-logo .company-contact h2{
-      font-size: 18px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact h3{
-      font-size: 18px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact h4{
+    #description .container .wrapper .slide .company-logo .company-contact h2,
+    #description .container .wrapper .slide .company-logo .company-contact h3,
+    #description .container .wrapper .slide .company-logo .company-contact h4 {
       font-size: 18px;
     }
     #description .container .wrapper .slide .links{
@@ -955,7 +913,6 @@ body{
     /* Hero section */
     #hero-page .container .main-text h1 {
         font-size: 70px;
-        margin-top: 20%;
         margin: 19% -2% 0 7%;
     }  
     #hero-page .container .circle {
@@ -980,7 +937,7 @@ body{
     /* Services section */
     #services .container .our-services {
       grid-template-columns: 1fr 1fr;
-      gap: 60px;
+      margin-left: 13%;
     }
     
     /* Description section */
@@ -988,7 +945,7 @@ body{
       width: 100%;
     }
     #description .container .wrapper .slider-text{
-      margin-top: 0%;
+      margin-top: 5%;
     }
     #description .container .wrapper .slider-text .roll-number {
       font-size: 110px;
@@ -1015,13 +972,9 @@ body{
     #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
       font-size: 14px;
     }
-    #description .container .wrapper .slide .company-logo .company-contact h2{
-      font-size: 16px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact h3{
-      font-size: 16px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact h4{
+    #description .container .wrapper .slide .company-logo .company-contact h2,
+    #description .container .wrapper .slide .company-logo .company-contact h3,
+    #description .container .wrapper .slide .company-logo .company-contact h4 {
       font-size: 16px;
     }
     #description .container .wrapper .slide .links{
@@ -1049,7 +1002,7 @@ body{
 /* ==================== TABLET PORTRAIT (768px) ==================== */
 @media (max-width: 768px) {  
     #navbar .container .nav .nav-links {
-     position: absolute;
+      position: absolute;
       top: 80px;
       right: 100%;
       width: 25%;
@@ -1070,7 +1023,6 @@ body{
     }
     #navbar .container .nav ul li {
       border-bottom: 1px solid #949393;
-      /* margin-left: 20px; */
       padding: 0;
       line-height: 60px;
     }
@@ -1113,7 +1065,6 @@ body{
     }
     #our-work .container .marketing {
         grid-template-columns: 1fr;
-        gap: 50px;
         margin: 12% 18% 10% 18%;
         text-align: center;
     }
@@ -1148,11 +1099,11 @@ body{
       grid-template-columns: 1fr 1fr;
     }
     #description .container .wrapper .slide .company-logo .company-services{
-      margin-top: -25%;
+      margin-top: -20%;
       margin-left: 50%;
     }
     #description .container .wrapper .slide .company-logo .company-services ul{
-      margin-top: -90%;
+      margin-top: -50%;
     }
     #description .container .wrapper .slide .company-logo .contact-mail {
       margin-left: 0;
@@ -1226,7 +1177,6 @@ body{
   /* Services section */
   #services .container .our-services {
     grid-template-columns: 1fr;
-    gap: -50px;
   }
   
   /* Description section */
@@ -1247,18 +1197,16 @@ body{
   }
   #description .container .wrapper .slide .company-logo .company-services h1 {
       font-size: 20px;
-  }
-  #description .container .wrapper .slide .company-logo .company-services ul{
-    margin-top: -100%;
+       margin-bottom: -50%;
   }
   #description .container .wrapper .slide .company-logo .company-services ul li a {
-      font-size: 20px;
+    font-size: 20px;
   }
   #description .container .wrapper .slide .company-logo .contact-mail {
     display: none;
   }
   #description .container .wrapper .slide .links{
-    margin-bottom: 25%;
+    margin-bottom: 21%;
   }
   #description .container .wrapper .slide .links h1{
     font-size: 15px;
@@ -1320,9 +1268,7 @@ body{
       font-size: 40px;
       margin-top: 10px;
     }
-    #description .container .wrapper .slide .roll-work p{
-      margin-top: 10px;
-    }
+    #description .container .wrapper .slide .roll-work p,
     #description .container .wrapper .slide .roll-work ol{
       margin-top: 10px;
     }
@@ -1379,10 +1325,8 @@ body{
     #hero-page .container .main-text h1 {
         font-size: 45px;
     }
-    #hero-page .container .side-text{
-      display: none;
-    }
-    #hero-page .container .line{
+    #hero-page .container .side-text,
+    #hero-page .container .line {
       display: none;
     }
 
