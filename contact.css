@@ -1,0 +1,231 @@
+body{
+  background-color: #f1f1f1;
+    
+}
+#navbar .container .nav {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  padding: 5px 5px;
+}
+
+#navbar .container .nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+#navbar .container .nav .logo img{
+  width: 140px;
+  height: 50px;
+}
+#navbar .container .nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+#navbar .container .nav ul li {
+  padding: 0 20px;
+}
+
+#navbar .container .nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  letter-spacing: 5px;
+}
+
+#navbar .container .nav .info .line{
+  height: 3px;
+  border: 1px solid black;
+  background-color: black;
+  
+}
+
+#navbar .container .nav .info{
+  display: inline-block;
+  position: relative;
+  margin-top: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#navbar .container .nav .info h2{
+  margin: 5px;
+}
+
+#navbar .container .nav .hamburger {
+  display: none; /* Hidden by default on desktop */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 100;
+  margin: 3% 0 0 0;
+}
+
+#navbar .container .nav .hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+
+#contact .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(198, 246, 246);
+  padding: 20px;
+  border-radius: 50px;
+  border: 4px solid #000;
+  height: 100%;
+  width:  60vw;
+  margin: 40px auto;
+    
+}
+#contact .container .contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+#contact .container .contact-info .contact-details .our-contact{
+  padding: 20px;
+}
+#contact .container .contact-info h4{
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#contact .container .contact-info p{
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 10px 0; 
+}
+
+#contact .container .contact-info .social-media .animated-link ul {
+  display: flex;
+  position: relative;
+  
+}
+
+#contact .container .contact-info .social-media .animated-link ul li {
+  list-style: none;
+  
+}
+
+#contact .container .contact-info .social-media .animated-link ul li a{
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 42px;
+  font-size: 25px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 30%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+  border: 2px solid #000;
+}
+
+#contact .container .contact-info .social-media .animated-link ul li a .icon {
+  position: relative;
+  color: black;
+  transition: .5s;
+  z-index: 4;
+}
+#contact .container .contact-info .social-media .animated-link ul li a:hover .icon {
+  color: #fff;
+}
+#contact .container .contact-info .social-media .animated-link ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+#contact .container .contact-info .social-media .animated-link ul li a:hover:before {
+  top: 0;
+}
+
+#contact .container .contact-info .social-media .animated-link ul li:nth-child(1) a:before{
+  background: linear-gradient(to right, #fa2acd, #f23029);
+}
+#contact .container .contact-info .social-media .animated-link ul li:nth-child(2) a:before{
+  background: #000;
+}
+#contact .container .contact-info .social-media .animated-link ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+#contact .container .contact-info .social-media .animated-link ul li:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+#contact .container .contact-form{
+  background-color: #19183a;
+  border-radius: 30px;  
+  color: #fff;
+}
+
+#contact .container .contact-form .form-details form{
+  padding: 20px;
+  color: #fff;
+}
+
+#contact .container .contact-form .form-details form p{
+  font-size: 35px;
+  font-family: cursive;
+}
+#contact .container .contact-form .form-details form .input-area{
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+#contact .container .contact-form .form-details form .input-area input{
+  background: none;
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #fff;
+}
+#contact .container .contact-form .form-details form .input-area input::placeholder,
+#contact .container .contact-form .form-details form .input-area textarea::placeholder{
+  color: #ffffff6c;
+}
+#contact .container .contact-form .form-details form .input-area textarea{
+  border: none;
+  background: none;
+  border-bottom: 1px solid #fff;
+  height: 80px;
+  resize: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 15px;
+}
+#contact .container .contact-form form .input-area .services-checkboxes{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 20px;
+}
+#contact .container .contact-form form .input-area .send-btn{
+  height: 40px;
+  font-size: 25px;
+  border-radius: 15px;
+}
