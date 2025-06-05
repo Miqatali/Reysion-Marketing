@@ -31,10 +31,10 @@ body{
 #navbar .container .nav ul li a {
   text-decoration: none;
   color: black;
-  font-size: 22px;
+  font-size: 25px;
   font-family:Arial, Helvetica, sans-serif;
   cursor: pointer;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 #navbar .container .nav .info .line{
@@ -203,6 +203,7 @@ body{
   margin-bottom: 20px;
   font-size: 15px;
   color: #fff;
+  
 }
 #contact .container .contact-form .form-details form .input-area input::placeholder,
 #contact .container .contact-form .form-details form .input-area textarea::placeholder{
@@ -223,6 +224,7 @@ body{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   margin-bottom: 20px;
+  font-family: "Roboto Mono", monospace;
 }
 #contact .container .contact-form form .input-area .send-btn{
   height: 40px;
