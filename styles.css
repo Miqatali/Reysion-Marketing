@@ -415,7 +415,7 @@ body{
 #description .container .slide {
   position: sticky;
   width: 99vw;
-  height: 100%;
+  height: 100vh;
   top: 0;
   overflow: hidden;
 }
