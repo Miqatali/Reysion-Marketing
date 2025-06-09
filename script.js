@@ -104,12 +104,12 @@ window.addEventListener('orientationchange', () => {
 });
 
 function adjustSlideHeight() {
-  const slides = document.querySelector('.slide');
+  const slides = document.querySelectorAll('.slide');
   const width = window.innerWidth;
   const height = window.innerHeight;
-  
-  slides.forEach(slide =>{
-    if (height > width) {
+
+  slides.forEach(slide => {
+      if (height > width) {
     slide.style.height = '50vh';
   } else {
     slide.style.height = '100vh';
