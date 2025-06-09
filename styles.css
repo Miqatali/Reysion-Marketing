@@ -1097,6 +1097,9 @@ body{
 
 /* ==================== MOBILE LANDSCAPE (669px) ==================== */
 @media (max-width: 669px){
+  #hero-page .container .side-text {
+    writing-mode:sideways-lr;
+  }
   #description .container .wrapper .slide .company-logo .contact-mail h1{
     font-size: 17px;
   }
