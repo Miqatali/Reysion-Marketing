@@ -730,9 +730,6 @@ body{
   background: #dd4b39;
 }
 
-
-
-
 /* ==================== GENERAL STYLES ==================== */
 @media (max-width: 2560px){
   /* Standard desktop adjustments */
@@ -785,7 +782,6 @@ body{
   }
 }
 
-
 @media (max-width: 1600px){
   /* clients section */
     #clients .logo-container .logo-slide img {
@@ -803,181 +799,175 @@ body{
     }
 }
 
-
 @media (max-width: 1440px) {
-    /* Standard desktop adjustments */
-    #navbar .container .nav .logo img {
-      width: 150px;
-      height: 50px;
-    }
-   
-    /* Hero section */
-    #hero-page .container .main-text h1 {
-      font-size: 80px;
-      margin: -22% 7% 0 7%;
-    }
-    
-    #hero-page .container .circle {
-      margin: 0 0 0 80%;
-    }
-
-    /* intro section */
-    #intro .container .intro-text{
-      margin: -15% 0 0 45%;
-    }
-
-    /* clients section */
-    #clients .logo-container .logo-slide img {
-      height: 100px;
-      margin: 0 70px;
-    }
-    
-    /* Our Work section */
-    #our-work .container .marketing {
-      margin: 12% 5% 10% 10%;
-    }
-    
-    #our-work .container .marketing h2 {
-      font-size: 70px;
-    }
-    
-    /* Services section */
-    #services .container .our-services {
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-    }
-    
-    /* Description section */
-    #description .container .wrapper .slide{
-      width: 100%;
-    }
-    #description .container .wrapper .slider-text{
-      margin-top: 0%;
-    }
-    #description .container .wrapper .slider-text .roll-number {
-      font-size: 110px;
-      margin-top: 12%;
-    }
-    
-    #description .container .wrapper .slider-text .roll-mask .roll-text {
-      font-size: 70px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact img{
-      width: 150px;
-      height: 150px; 
-    }
-    #description .container .wrapper .slide .company-logo .company-services ul{
-      margin-top: -60px;
-    }
-    #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
-      font-size: 16px;
-    }
-    #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
-      padding-bottom: 8px;
-      height: 40px;
-      width: 40px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact h2,
-    #description .container .wrapper .slide .company-logo .company-contact h3,
-    #description .container .wrapper .slide .company-logo .company-contact h4 {
-      font-size: 18px;
-    }
-    #description .container .wrapper .slide .links{
-      margin-top: 1%;
-      margin-bottom: 6%;
-    }
+  /* Standard desktop adjustments */
+  #navbar .container .nav .logo img {
+    width: 150px;
+    height: 50px;
+  }
+ 
+  /* Hero section */
+  #hero-page .container .main-text h1 {
+    font-size: 80px;
+    margin: -22% 7% 0 7%;
+  }
+  
+  #hero-page .container .circle {
+    margin: 0 0 0 80%;
+  }
+  /* intro section */
+  #intro .container .intro-text{
+    margin: -15% 0 0 45%;
+  }
+  /* clients section */
+  #clients .logo-container .logo-slide img {
+    height: 100px;
+    margin: 0 70px;
+  }
+  
+  /* Our Work section */
+  #our-work .container .marketing {
+    margin: 12% 5% 10% 10%;
+  }
+  
+  #our-work .container .marketing h2 {
+    font-size: 70px;
+  }
+  
+  /* Services section */
+  #services .container .our-services {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+  
+  /* Description section */
+  #description .container .wrapper .slide{
+    width: 100%;
+  }
+  #description .container .wrapper .slider-text{
+    margin-top: 0%;
+  }
+  #description .container .wrapper .slider-text .roll-number {
+    font-size: 110px;
+    margin-top: 12%;
+  }
+  
+  #description .container .wrapper .slider-text .roll-mask .roll-text {
+    font-size: 70px;
+  }
+  #description .container .wrapper .slide .company-logo .company-contact img{
+    width: 150px;
+    height: 150px; 
+  }
+  #description .container .wrapper .slide .company-logo .company-services ul{
+    margin-top: -60px;
+  }
+  #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
+    font-size: 16px;
+  }
+  #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
+    padding-bottom: 8px;
+    height: 40px;
+    width: 40px;
+  }
+  #description .container .wrapper .slide .company-logo .company-contact h2,
+  #description .container .wrapper .slide .company-logo .company-contact h3,
+  #description .container .wrapper .slide .company-logo .company-contact h4 {
+    font-size: 18px;
+  }
+  #description .container .wrapper .slide .links{
+    margin-top: 1%;
+    margin-bottom: 6%;
+  }
 }
 
 
 /* ==================== TABLET LANDSCAPE (1024px) ==================== */
 @media (max-width: 1024px) {
-    #navbar .container .nav .nav-links{
-      width: 27%;
-    }
-
-    #navbar .container .nav .logo img {
-      width: 110px;
-      height: 40px;
-    }
-    #navbar .container .nav .hamburger{
-      width: 30px;
-    }
-
-    #navbar .container .nav ul li a{
-      font-size: 20px;
-    }
-    
-    /* Hero section */
-    #hero-page .container .main-text h1 {
-        font-size: 70px;
-        margin: 19% -2% 0 7%;
-    }  
-    #hero-page .container .circle {
-        display: none;
-    }
-
-    /* intro section */
-    #intro .container .intro-text{
-      margin: -20% 0 0 45%;
-    }
-    
-    /* Our Work section */
-    #our-work .container .marketing {
-      gap: 80px;
-      margin: 12% 5% 10% 10%;
-    }
-    
-    #our-work .container .marketing h2 {
-      font-size: 80px;
-    }
-    
-    /* Services section */
-    #services .container .our-services {
-      grid-template-columns: 1fr 1fr;
-      margin-left: 13%;
-    }
-    
-    /* Description section */
-    #description .container .wrapper .slide{
-      width: 100%;
-    }
-    #description .container .wrapper .slider-text{
-      margin-top: 5%;
-    }
-    #description .container .wrapper .slider-text .roll-number {
-      font-size: 110px;
-      margin-top: 12%;
-    }  
-    #description .container .wrapper .slider-text .roll-mask .roll-text {
+  #navbar .container .nav .nav-links{
+    width: 27%;
+  }
+  #navbar .container .nav .logo img {
+    width: 110px;
+    height: 40px;
+  }
+  #navbar .container .nav .hamburger{
+    width: 30px;
+  }
+  #navbar .container .nav ul li a{
+    font-size: 20px;
+  }
+  
+  /* Hero section */
+  #hero-page .container .main-text h1 {
       font-size: 70px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact img{
-      width: 140px;
-      height: 150px;
-      margin-bottom: -20px;
-    }
-    #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
-      padding-bottom: 8px;
-      height: 40px;
-      width: 38px;
-    }
-    #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit .btn-text svg{
-      width: 22px;
-      height: 22px;
-      margin-top: 2px;
-    }
-    #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
-      font-size: 14px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact h2,
-    #description .container .wrapper .slide .company-logo .company-contact h3,
-    #description .container .wrapper .slide .company-logo .company-contact h4 {
-      font-size: 16px;
-    }
-    #description .container .wrapper .slide .links{
-      margin-top: 5%;
-      margin-bottom: 8%;
-    }
+      margin: 19% -2% 0 7%;
+  }  
+  #hero-page .container .circle {
+      display: none;
+  }
+  /* intro section */
+  #intro .container .intro-text{
+    margin: -20% 0 0 45%;
+  }
+  
+  /* Our Work section */
+  #our-work .container .marketing {
+    gap: 80px;
+    margin: 12% 5% 10% 10%;
+  }
+  
+  #our-work .container .marketing h2 {
+    font-size: 80px;
+  }
+  
+  /* Services section */
+  #services .container .our-services {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 13%;
+  }
+  
+  /* Description section */
+  #description .container .wrapper .slide{
+    width: 100%;
+  }
+  #description .container .wrapper .slider-text{
+    margin-top: 5%;
+  }
+  #description .container .wrapper .slider-text .roll-number {
+    font-size: 110px;
+    margin-top: 12%;
+  }  
+  #description .container .wrapper .slider-text .roll-mask .roll-text {
+    font-size: 70px;
+  }
+  #description .container .wrapper .slide .company-logo .company-contact img{
+    width: 140px;
+    height: 150px;
+    margin-bottom: -20px;
+  }
+  #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
+    padding-bottom: 8px;
+    height: 40px;
+    width: 38px;
+  }
+  #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit .btn-text svg{
+    width: 22px;
+    height: 22px;
+    margin-top: 2px;
+  }
+  #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
+    font-size: 14px;
+  }
+  #description .container .wrapper .slide .company-logo .company-contact h2,
+  #description .container .wrapper .slide .company-logo .company-contact h3,
+  #description .container .wrapper .slide .company-logo .company-contact h4 {
+    font-size: 16px;
+  }
+  #description .container .wrapper .slide .links{
+    margin-top: 5%;
+    margin-bottom: 8%;
+  }
 }
 
 /* ==================== TABLET PORTRAIT (880px) ==================== */
@@ -1008,32 +998,32 @@ body{
   
   /* Hero section */
   #hero-page .container .circle {
-      display: none;
+    display: none;
   }
   #hero-page .container .main-text h1 {
-      font-size: 60px;
-      margin: 19% -11% 0 0;
+    font-size: 60px;
+    margin: 19% -11% 0 0;
   }
 
   /* Intro section */
   #intro .container .intro-text {
-      margin: -23% 0 0 45%;
+    margin: -23% 0 0 45%;
   }
   /* Our Work section */
   #our-work .container .animated-text {
-      font-size: 40px;
-      margin: 0 10% 0 10%;
+    font-size: 40px;
+    margin: 0 10% 0 10%;
   }
   #our-work .container .marketing {
-      grid-template-columns: 1fr;
-      margin: 12% 18% 10% 18%;
-      text-align: center;
+    grid-template-columns: 1fr;
+    margin: 12% 18% 10% 18%;
+    text-align: center;
   }
   
   /* Services section */
   #services .container .tag-line p {
-      font-size: 40px;
-      line-height: 50px;
+    font-size: 40px;
+    line-height: 50px;
   }
   
   /* Description section */
@@ -1122,7 +1112,7 @@ body{
     right: 30px;
   }
 
- /* Hero section */
+  /* Hero section */
   #hero-page .container .main-text h1 {
     font-size: 50px;
   }
@@ -1160,8 +1150,8 @@ body{
     font-size: 18px;
   }
   #description .container .wrapper .slide .company-logo .company-services h1 {
-      font-size: 20px;
-       margin-bottom: -50%;
+    font-size: 20px;
+    margin-bottom: -50%;
   }
   #description .container .wrapper .slide .company-logo .company-services ul li a {
     font-size: 20px;
@@ -1185,148 +1175,143 @@ body{
 
 /* ==================== MOBILE PORTRAIT (480px) ==================== */
 @media (max-width: 480px) {
-    #navbar .container .nav{
-      padding: 10px 25px;
-    }
-    #navbar .container .nav .nav-links {
-      width: 45%;
-    }
+  #navbar .container .nav{
+    padding: 10px 25px;
+  }
+  #navbar .container .nav .nav-links {
+    width: 45%;
+  }
+
+  #navbar .container .nav ul li a{
+    font-size: 16px;
+  }
+  /* Hero section */
+  #hero-page .container .main-text h1 {
+    font-size: 50px;
+    margin-top: 25%;
+  }
   
-    #navbar .container .nav ul li a{
-      font-size: 16px;
-    }
-
-    /* Hero section */
-    #hero-page .container .main-text h1 {
-      font-size: 50px;
-      margin-top: 25%;
-    }
-    
-    /* intro section */
-    #intro .container .intro-text{
-      margin: -40% 0 0 35%;
-    }
-
-    /* Our Work section */
-    #our-work .container .animated-text {
-      font-size: 30px;
-    }
-    #our-work .container .marketing h2 {
-      font-size: 60px;
-    }
-    
-    /* Services section */
-    #services .container .tag-line p {
-      font-size: 30px;
-      line-height: 40px;
-    }
-    
-    /* Description section */
-    #description .container .wrapper .slide{
-      height: 100vh;
-    }
-    #description .container .wrapper .slider-text .roll-number {
-      font-size: 80px;
-    }
-    #description .container .wrapper .slide .slider-text .roll-mask .roll-text {
-      font-size: 40px;
-      margin-top: 10px;
-    }
-    #description .container .wrapper .slide .roll-work p,
-    #description .container .wrapper .slide .roll-work ol{
-      margin-top: 10px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact img {
-      width: 100px;
-      height: 100px;
-    }
-    #description .container .wrapper .slide .company-logo .company-contact h3{
-      margin-top: -20px;
-      font-size: 15px;
-    }
-    #description .container .wrapper .slide .company-logo .contact-mail{
-      display: none;
-    }
-    #description .container .wrapper .slide .links .animated-link ul li a {
-      width: 60px;
-      height: 60px;
-      line-height: 62px;
-      font-size: 30px;
-      margin-bottom: 50px;
-      margin-left: -120%;
-      margin-top: 15%;
-    }
-    #description .container .wrapper .slide .links .animated-link{
-      margin-top: 10%;
-      margin-left: 50%;
-    }
-    #description .container .wrapper .slide .links .copyright-tag{
-      margin-top: 10%;
-      margin-left: -20px;
-    }
-    #description .container .wrapper .slide .links{
-      display: grid;
-      grid-template-columns: 1fr;
-      margin-top: 20px;
-    }
-    #description .container .wrapper .slide .company-logo{
-      margin-top: 10%;
-    }
-    
+  /* intro section */
+  #intro .container .intro-text{
+    margin: -40% 0 0 35%;
+  }
+  /* Our Work section */
+  #our-work .container .animated-text {
+    font-size: 30px;
+  }
+  #our-work .container .marketing h2 {
+    font-size: 60px;
+  }
+  
+  /* Services section */
+  #services .container .tag-line p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+  /* Description section */
+  #description .container .wrapper .slide{
+    height: 100vh;
+  }
+  #description .container .wrapper .slider-text .roll-number {
+    font-size: 80px;
+  }
+  #description .container .wrapper .slide .slider-text .roll-mask .roll-text {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  #description .container .wrapper .slide .roll-work p,
+  #description .container .wrapper .slide .roll-work ol{
+    margin-top: 10px;
+  }
+  #description .container .wrapper .slide .company-logo .company-contact img {
+    width: 100px;
+    height: 100px;
+  }
+  #description .container .wrapper .slide .company-logo .company-contact h3{
+    margin-top: -20px;
+    font-size: 15px;
+  }
+  #description .container .wrapper .slide .company-logo .contact-mail{
+    display: none;
+  }
+  #description .container .wrapper .slide .links .animated-link ul li a {
+    width: 60px;
+    height: 60px;
+    line-height: 62px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: -120%;
+    margin-top: 15%;
+  }
+  #description .container .wrapper .slide .links .animated-link{
+    margin-top: 10%;
+    margin-left: 50%;
+  }
+  #description .container .wrapper .slide .links .copyright-tag{
+    margin-top: 10%;
+    margin-left: -20px;
+  }
+  #description .container .wrapper .slide .links{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+  #description .container .wrapper .slide .company-logo{
+    margin-top: 10%;
+  }
+  
 }
 
 /* ==================== SMALL MOBILE (360px) ==================== */
 @media (max-width: 360px) {
-
-    /* Hero section */
-    #hero-page .container .main-text h1 {
-        font-size: 45px;
-    }
-    #hero-page .container .side-text,
-    #hero-page .container .line {
-      display: none;
-    }
-
-    /* intro section */
-    #intro .container .intro-text .arrow-button{
-      width: 80px;
-      height: 80px;
-      margin: 80% 0 10% 10%;
-    }
-    
-    /* Our Work section */
-    #our-work .container .marketing h2 {
-        font-size: 50px;
-    }
-    #our-work .container .marketing p {
-        font-size: 20px;
-    }
-    
-    /* Description section */
-    #description .container .wrapper .slide{
-      height: 100vh;
-    }
-    #description .container .wrapper .slide1 .roll-work  p{
-        margin-bottom: -10%;
-    }
-    #description .container .wrapper .slider-text .roll-number {
-        font-size: 60px;
-    }
-    #description .container .wrapper .slider-text .roll-text {
-        font-size: 30px;
-    }
-    #description .container .wrapper .slide .links .animated-link ul li a {
-        width: 40px;
-        height: 40px;
-        line-height: 42px;
-        font-size: 25px;
-        margin-bottom: 50px;
-        margin-left: -130%;
-        margin-top: 15%;
-    }
-    #description .container .wrapper .slide .links .animated-link{
-      margin-top: 20%;
-      margin-left: 43%;
-    }
-    
+  /* Hero section */
+  #hero-page .container .main-text h1 {
+    font-size: 45px;
+  }
+  #hero-page .container .side-text,
+  #hero-page .container .line {
+    display: none;
+  }
+  /* intro section */
+  #intro .container .intro-text .arrow-button{
+    width: 80px;
+    height: 80px;
+    margin: 80% 0 10% 10%;
+  }
+  
+  /* Our Work section */
+  #our-work .container .marketing h2 {
+    font-size: 50px;
+  }
+  #our-work .container .marketing p {
+    font-size: 20px;
+  }
+  
+  /* Description section */
+  #description .container .wrapper .slide{
+    height: 100vh;
+  }
+  #description .container .wrapper .slide1 .roll-work  p{
+    margin-bottom: -10%;
+  }
+  #description .container .wrapper .slider-text .roll-number {
+    font-size: 60px;
+  }
+  #description .container .wrapper .slider-text .roll-text {
+    font-size: 30px;
+  }
+  #description .container .wrapper .slide .links .animated-link ul li a {
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-left: -130%;
+    margin-top: 15%;
+  }
+  #description .container .wrapper .slide .links .animated-link{
+    margin-top: 20%;
+    margin-left: 43%;
+  }
 }

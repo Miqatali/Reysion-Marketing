@@ -9,51 +9,40 @@ function handleClick() {
     window.location.href = "https://reysion-its.com/contact"; // or any URL
 }
 
-
-
-
-
-
+// js for animated text
 const animatedText = document.getElementById('animatedText');
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animatedText.classList.add('visible');
-        } 
-      });
-    },
-    {
-      threshold: 0.1
-    }
-  );
-
-  observer.observe(animatedText);
-
-  
-
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const box = document.querySelector('.box-for-line');
-  
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          box.classList.add('animate-line');
-        }
-      });
-    }, {
-      threshold: 0.5 // triggers when 50% of the element is visible
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animatedText.classList.add('visible');
+      } 
     });
-  
-    observer.observe(box);
+  },
+  {
+    threshold: 0.1
+  }
+);
+observer.observe(animatedText);
+
+document.addEventListener('DOMContentLoaded', function() {
+  const box = document.querySelector('.box-for-line');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        box.classList.add('animate-line');
+      }
+    });
+  }, {
+    threshold: 0.5 // triggers when 50% of the element is visible
   });
- 
 
+  observer.observe(box);
+});
 
-  // for loading button
-
+// for loading button
 function handleSubmit(button) {
   const emailInput = document.getElementById('email');
   const emailValue = emailInput.value.trim();
@@ -69,7 +58,7 @@ function handleSubmit(button) {
     return; // Do nothing
   }
 
-    // Check if email ends with @gmail.com
+  // Check if email ends with @gmail.com
   if (!emailValue.endsWith('@gmail.com')) {
     alert("Please enter a valid mail address (e.g., yourname@gmail.com).");
     return;
@@ -84,18 +73,32 @@ function handleSubmit(button) {
     spinner.style.display = 'none';
     btnText.style.display = 'inline-block';
     alert("Thankyou for subscribing our newsletter");
-    emailInput.value = ''; // Optional: clear the input field
+    emailInput.value = ''; 
   }, 2000);
 }
 
-
 // js for navbar button
- document.addEventListener('DOMContentLoaded', function() {
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
-        
-        hamburger.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-    });
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  
+  hamburger.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+  });
+});
+
+window.addEventListener('orientationchange', () => {
+    const screenWidth = window.screen.width;
+    const screenHeight = window.screen.height;
+    const innerWidth = window.innerWidth;
+    const innerHeight = window.innerHeight;
+    const orientation = (innerWidth > innerHeight) ? 'Landscape' : 'Portrait';
+ 
+    alert(
+        `Orientation Changed!\n\n` +
+        `Device Orientation: ${orientation}\n` +
+        `Screen Size: ${screenWidth} x ${screenHeight}\n` +
+        `Viewport Size: ${innerWidth} x ${innerHeight}`
+    );
+});
