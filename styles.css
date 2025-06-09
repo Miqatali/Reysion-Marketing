@@ -1016,6 +1016,9 @@ body{
     font-size: 60px;
     margin: 19% -11% 0 0;
   }
+  #hero-page .container .side-text {
+    writing-mode:sideways-lr;
+  }
 
   /* Intro section */
   #intro .container .intro-text {
@@ -1097,9 +1100,7 @@ body{
 
 /* ==================== MOBILE LANDSCAPE (669px) ==================== */
 @media (max-width: 669px){
-  #hero-page .container .side-text {
-    writing-mode:sideways-lr;
-  }
+  
   #description .container .wrapper .slide .company-logo .contact-mail h1{
     font-size: 17px;
   }
@@ -1283,6 +1284,7 @@ body{
   /* Hero section */
   #hero-page .container .main-text h1 {
     font-size: 45px;
+
   }
   #hero-page .container .side-text,
   #hero-page .container .line {
