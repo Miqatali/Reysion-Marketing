@@ -102,3 +102,18 @@ window.addEventListener('orientationchange', () => {
         `Viewport Size: ${innerWidth} x ${innerHeight}`
     );
 });
+
+function adjustSlideHeight() {
+  const slide = document.querySelector('.slide');
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  if (height > width) {
+    slide.style.height = '50vh';
+  } else {
+    slide.style.height = '100vh';
+  }
+}
+// Run on load
+window.addEventListener('load', adjustSlideHeight);
+// Run on resize
+window.addEventListener('resize', adjustSlideHeight);
