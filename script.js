@@ -104,14 +104,17 @@ window.addEventListener('orientationchange', () => {
 });
 
 function adjustSlideHeight() {
-  const slide = document.querySelector('.slide');
+  const slides = document.querySelector('.slide');
   const width = window.innerWidth;
   const height = window.innerHeight;
-  if (height > width) {
+  
+  slides.forEach(slide =>{
+    if (height > width) {
     slide.style.height = '50vh';
   } else {
     slide.style.height = '100vh';
   }
+  });
 }
 // Run on load
 window.addEventListener('load', adjustSlideHeight);
