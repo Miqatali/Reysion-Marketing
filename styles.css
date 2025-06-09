@@ -289,8 +289,8 @@ body{
   word-spacing: 3px;
   letter-spacing: 2px;
   opacity: 0;
-    transform: translateY(-100px);
-    transition: all 1s ease-out;
+  transform: translateY(-100px);
+  transition: all 1s ease-out;
 }
 
 #our-work .container .animated-text.visible {
@@ -784,19 +784,19 @@ body{
 
 @media (max-width: 1600px){
   /* clients section */
-    #clients .logo-container .logo-slide img {
-      height: 100px;
-      margin: 0 70px;
-    }
-    #hero-page .container .main-text h1 {
-      font-size: 80px;
-      margin: -22% 10% 0 10%;
-    }
-    
-    /* intro section */
-    #intro .container .intro-text{
-      margin: -13% 0 0 45%;
-    }
+  #clients .logo-container .logo-slide img {
+    height: 100px;
+    margin: 0 70px;
+  }
+  #hero-page .container .main-text h1 {
+    font-size: 80px;
+    margin: -22% 10% 0 10%;
+  }
+  
+  /* intro section */
+  #intro .container .intro-text{
+    margin: -13% 0 0 45%;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -968,6 +968,12 @@ body{
     margin-top: 5%;
     margin-bottom: 8%;
   }
+  #description .container .wrapper .slide .links .animated-link ul li a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 35px;
+  }
 }
 
 /* ==================== TABLET PORTRAIT (880px) ==================== */
@@ -982,6 +988,12 @@ body{
   #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit .btn-text svg{
     width: 18px;
     height: 18px;   
+  }
+  #description .container .wrapper .slide .links .animated-link ul li a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 35px;
   }
 
 }

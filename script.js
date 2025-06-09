@@ -109,11 +109,15 @@ function adjustSlideHeight() {
   const height = window.innerHeight;
 
   slides.forEach(slide => {
-      if (height > width) {
-    slide.style.height = '50vh';
-  } else {
-    slide.style.height = '100vh';
-  }
+    if(width > 480){
+        if (height > width) {
+          slide.style.height = '50vh';
+      } else {
+          slide.style.height = '100vh';
+      }
+    }else{
+      slide.style.height = '100vh';
+    }
   });
 }
 // Run on load
