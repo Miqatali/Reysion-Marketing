@@ -4,28 +4,28 @@ body{
 }
 #navbar .container .nav {
   display: flex;
-  margin-top: 20px;
-  justify-content: space-around;
-  padding: 5px 5px;
+  /* margin-top: 20px; */
+  justify-content: space-between;
+  padding: 15px 65px;
 }
 
-#navbar .container .nav .logo {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 8px;
-}
+
 #navbar .container .nav .logo img{
   width: 140px;
   height: 50px;
 }
 #navbar .container .nav ul {
   list-style: none;
-  display: flex;
   padding: 0;
+  border: 2px solid gray;
+  border-radius: 20px;
 }
 
 #navbar .container .nav ul li {
-  padding: 0 20px;
+  margin: 10px; 
+  border-bottom: 1px solid #949393;
+  padding: 0;
+  line-height: 60px;
 }
 
 #navbar .container .nav ul li a {
@@ -34,21 +34,19 @@ body{
   font-size: 25px;
   font-family:Arial, Helvetica, sans-serif;
   cursor: pointer;
-  letter-spacing: 3px;
 }
 
 #navbar .container .nav .info .line{
   height: 3px;
   border: 1px solid black;
   background-color: black;
-  
 }
 
 #navbar .container .nav .info{
   display: inline-block;
   position: relative;
-  margin-top: 8px;
-  font-size: 12px;
+  margin-top: 5px;
+  font-size: 15px;
   cursor: pointer;
 }
 #navbar .container .nav .info h2{
@@ -56,14 +54,13 @@ body{
 }
 
 #navbar .container .nav .hamburger {
-  display: none; /* Hidden by default on desktop */
   flex-direction: column;
   justify-content: space-around;
-  width: 30px;
-  height: 25px;
+  width: 35px;
+  height: 30px;
   cursor: pointer;
   z-index: 100;
-  margin: 3% 0 0 0;
+  margin: 15px 0 0 0;
 }
 
 #navbar .container .nav .hamburger span {
@@ -73,6 +70,45 @@ body{
   background-color: #000;
   transition: all 0.3s ease;
 }
+
+#navbar .container .nav .nav-links {
+  position: absolute;
+  top: 80px;
+  right: 100%;
+  width: 20%;
+  height: auto;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: flex-start; /* This makes items align left in a flex column */
+  text-align: left;
+  transition: right 0.7s ease;
+  z-index: 100;
+}
+#navbar .container .nav .nav-links.active {
+  right: 20px;
+}
+/* #navbar .container .nav ul{
+  border: 2px solid gray;
+  border-radius: 20px;
+} */
+/* #navbar .container .nav ul li {
+  border-bottom: 1px solid #949393;
+  padding: 0;
+  line-height: 60px;
+} */
+
+#navbar .container .nav .hamburger {
+  display: flex; /* Show on mobile */
+}
+#navbar .container .nav .hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#navbar .container .nav .hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+#navbar .container .nav .hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -9px);
+} 
 
 
 #contact .container{

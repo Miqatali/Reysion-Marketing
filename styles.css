@@ -7,15 +7,8 @@ body{
 }
 #navbar .container .nav {
   display: flex;
-  margin-top: 10px;
-  justify-content: space-around;
-  padding: 15px 15px;
-}
-
-#navbar .container .nav .logo {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 10px;
+  justify-content: space-between;
+  padding: 15px 65px;
 }
 #navbar .container .nav .logo img{
   width: 140px;
@@ -23,12 +16,16 @@ body{
 }
 #navbar .container .nav ul {
   list-style: none;
-  display: flex;
   padding: 0;
+  border: 2px solid gray;
+  border-radius: 20px;
 }
 
 #navbar .container .nav ul li {
-  margin: 20px; 
+  margin: 0 10px; 
+  border-bottom: 1px solid #949393;
+  padding: 0;
+  line-height: 60px;
 }
 
 #navbar .container .nav ul li a {
@@ -36,31 +33,17 @@ body{
   color: black;
   font-family:Arial, Helvetica, sans-serif;
   cursor: pointer;
-}
-
-#navbar .container .nav .info .line{
-  height: 5px;
-  border: 1px solid black;
-  background-color: black;
-}
-
-#navbar .container .nav .info{
-  display: inline-block;
-  position: relative;
-  margin-top: 10px;
-  font-size: 15px;
-  cursor: pointer;
+  font-size: 20px;
 }
 
 #navbar .container .nav .hamburger {
-  display: none; /* Hidden by default on desktop */
   flex-direction: column;
   justify-content: space-around;
-  width: 30px;
-  height: 25px;
+  width: 35px;
+  height: 30px;
   cursor: pointer;
   z-index: 100;
-  margin: 3% 0 0 0;
+  margin: 15px 0 0 0;
 }
 
 #navbar .container .nav .hamburger span {
@@ -70,6 +53,35 @@ body{
   background-color: #000;
   transition: all 0.3s ease;
 }
+#navbar .container .nav .nav-links {
+  position: absolute;
+  top: 80px;
+  right: 100%;
+  width: 15%;
+  height: auto;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: flex-start; /* This makes items align left in a flex column */
+  text-align: left;
+  transition: right 0.7s ease;
+  z-index: 100;
+}
+#navbar .container .nav .nav-links.active {
+  right: 20px;
+}
+
+#navbar .container .nav .hamburger {
+  display: flex; 
+}
+#navbar .container .nav .hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#navbar .container .nav .hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+#navbar .container .nav .hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -9px);
+} 
 
 
 /* css for hero-page */
@@ -731,26 +743,22 @@ body{
     width: 160px;
     height: 50px;
   }
-  #navbar .container .nav ul li a{
-    font-size: 30px;
-    margin: 10px;
-  } 
-  #navbar .container .nav .info{
-    margin-top: 15px;
-    font-size: 15px;
-  }
+
+  /* Hero section */
   #hero-page .container .main-text h1 {
     font-size: 80px;
-    margin: -10% 10% 0 10%;
+    margin: 0% 10% 0 10%;
   }
   #hero-page .container .circle {
     margin-left: 82%;
   }
+
   /* clients section */
   #clients .logo-container .logo-slide img {
     height: 150px;
     margin: 0 70px;
   }
+
   /* intro section */
   #intro .container .intro-text{
     margin: -8% 0 0 47%;
@@ -784,6 +792,15 @@ body{
       height: 100px;
       margin: 0 70px;
     }
+    #hero-page .container .main-text h1 {
+      font-size: 80px;
+      margin: -22% 10% 0 10%;
+    }
+    
+    /* intro section */
+    #intro .container .intro-text{
+      margin: -13% 0 0 45%;
+    }
 }
 
 
@@ -793,14 +810,6 @@ body{
       width: 150px;
       height: 50px;
     }
-    #navbar .container .nav ul li a{
-      font-size: 25px;
-      margin: 20px;
-    } 
-    #navbar .container .nav .info{
-      margin-top: 17px;
-      font-size: 15px;
-    }
    
     /* Hero section */
     #hero-page .container .main-text h1 {
@@ -809,7 +818,7 @@ body{
     }
     
     #hero-page .container .circle {
-      margin-left: 80%;
+      margin: 0 0 0 80%;
     }
 
     /* intro section */
@@ -879,36 +888,23 @@ body{
     }
 }
 
-/* ==================== TABLET LANDSCAPE (1270px) ==================== */
-@media (max-width: 1270px){
-  #navbar .container .nav ul li a{
-      font-size: 25px;
-      margin: 3px;
-    }
-  #navbar .container .nav .info {
-    display: none;
-  }
-}
 
 /* ==================== TABLET LANDSCAPE (1024px) ==================== */
 @media (max-width: 1024px) {
-    #navbar .container .nav{
-      display: flex;
-      justify-content: space-between;
+    #navbar .container .nav .nav-links{
+      width: 27%;
     }
 
     #navbar .container .nav .logo img {
       width: 110px;
       height: 40px;
-      /* margin: 5px; */
+    }
+    #navbar .container .nav .hamburger{
+      width: 30px;
     }
 
     #navbar .container .nav ul li a{
-      font-size: 25px;
-      margin: 3px;
-    }
-    #navbar .container .nav .info {
-      display: none;
+      font-size: 20px;
     }
     
     /* Hero section */
@@ -986,10 +982,6 @@ body{
 
 /* ==================== TABLET PORTRAIT (880px) ==================== */
 @media (max-width: 880px){
-  #navbar .container .nav ul li a{
-    font-size: 20px;
-    margin: 3px;
-  }
   #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
     font-size: 11px;
   }
@@ -1006,135 +998,99 @@ body{
 
 /* ==================== TABLET PORTRAIT (768px) ==================== */
 @media (max-width: 768px) {  
-    #navbar .container .nav .nav-links {
-      position: absolute;
-      top: 80px;
-      right: 100%;
-      width: 25%;
-      height: auto;
-      background-color: #fff;
-      flex-direction: column;
-      align-items: flex-start; /* This makes items align left in a flex column */
-      text-align: left;
-      transition: right 0.7s ease;
-      z-index: 100;
-    }
-    #navbar .container .nav .nav-links.active {
-      right: 20px;
-    }
-    #navbar .container .nav ul{
-      border: 2px solid gray;
-      border-radius: 20px;
-    }
-    #navbar .container .nav ul li {
-      border-bottom: 1px solid #949393;
-      padding: 0;
-      line-height: 60px;
-    }
-    
-    #navbar .container .nav .hamburger {
-      display: flex; /* Show on mobile */
-    }
-    #navbar .container .nav .hamburger.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-    #navbar .container .nav .hamburger.active span:nth-child(2) {
-      opacity: 0;
-    }
-    #navbar .container .nav .hamburger.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -7px);
-    } 
-    #navbar .container .nav .info {
-        display: none;
-    }    
-    
-    /* Hero section */
-    #hero-page .container .circle {
-        display: none;
-    }
-    #hero-page .container .main-text h1 {
-        font-size: 60px;
-        margin: 19% -11% 0 0;
-        padding: 0;
-    }
-
-    /* Intro section */
-    #intro .container .intro-text {
-        margin: -23% 0 0 45%;
-    }
-
-    /* Our Work section */
-    #our-work .container .animated-text {
-        font-size: 40px;
-        margin: 0 10% 0 10%;
-    }
-    #our-work .container .marketing {
-        grid-template-columns: 1fr;
-        margin: 12% 18% 10% 18%;
-        text-align: center;
-    }
-    
-    /* Services section */
-    #services .container .tag-line p {
-        font-size: 40px;
-        line-height: 50px;
-    }
-    
-    /* Description section */
-    #description .container .wrapper .slide{
-      height: 100%;
-    }
-    #description .container .wrapper .slider-text {
-      grid-template-columns: 1fr;
-      margin-left: 0 !important;
-      margin-top: -10%;
-    }
-    #description .container .wrapper .slider-text .roll-number {
-      font-size: 100px;
-      text-align: center;
-    }
-    #description .container .wrapper .roll-work {
-      margin-left: 15%;
-      margin-right: 15%;
-    }
-    #description .container .wrapper .roll-work ol{
-      margin-top: -10%;
-    }
-    #description .container .wrapper .slide .company-logo {
-      grid-template-columns: 1fr 1fr;
-    }
-    #description .container .wrapper .slide .company-logo .company-services{
-      margin-top: -20%;
-      margin-left: 50%;
-    }
-    #description .container .wrapper .slide .company-logo .company-services ul{
-      margin-top: -50%;
-    }
-    #description .container .wrapper .slide .company-logo .contact-mail {
-      margin-left: 0;
-      margin-top: -30%;
-    }
-    #description .container .wrapper .slide .company-logo .contact-mail h1{
-      margin-bottom: 20px;
-    }
-    #description .container .wrapper .slide .company-logo .contact-mail .mail-details .privacy-tag{
+  #navbar .container .nav .nav-links {
+    width: 30%;
+  }
+ 
+  #navbar .container .nav ul li a{
+    font-size: 18px;
+  }
+  
+  /* Hero section */
+  #hero-page .container .circle {
       display: none;
-    }
-    #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
-      padding-bottom: 10px;
-      height: 36px;
-      width: 35px;
-    }
-    #description .container .wrapper .slide .links{
-      margin-top: -1%;
-      margin-bottom: 6%;
-    }
-    #description .container .wrapper .slide .links .animated-link ul li a {
-      width: 50px;
-      height: 50px;
+  }
+  #hero-page .container .main-text h1 {
+      font-size: 60px;
+      margin: 19% -11% 0 0;
+  }
+
+  /* Intro section */
+  #intro .container .intro-text {
+      margin: -23% 0 0 45%;
+  }
+  /* Our Work section */
+  #our-work .container .animated-text {
+      font-size: 40px;
+      margin: 0 10% 0 10%;
+  }
+  #our-work .container .marketing {
+      grid-template-columns: 1fr;
+      margin: 12% 18% 10% 18%;
+      text-align: center;
+  }
+  
+  /* Services section */
+  #services .container .tag-line p {
+      font-size: 40px;
       line-height: 50px;
-      font-size: 29px;
-    }
+  }
+  
+  /* Description section */
+  #description .container .wrapper .slide{
+    height: 100%;
+  }
+  #description .container .wrapper .slider-text {
+    grid-template-columns: 1fr;
+    margin-left: 0 !important;
+    margin-top: -10%;
+  }
+  #description .container .wrapper .slider-text .roll-number {
+    font-size: 100px;
+    text-align: center;
+  }
+  #description .container .wrapper .roll-work {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  #description .container .wrapper .roll-work ol{
+    margin-top: -10%;
+  }
+  #description .container .wrapper .slide .company-logo {
+    grid-template-columns: 1fr 1fr;
+  }
+  #description .container .wrapper .slide .company-logo .company-services{
+    margin-top: -20%;
+    margin-left: 50%;
+  }
+  #description .container .wrapper .slide .company-logo .company-services ul{
+    margin-top: -50%;
+  }
+  #description .container .wrapper .slide .company-logo .contact-mail {
+    margin-left: 0;
+    margin-top: -30%;
+  }
+  #description .container .wrapper .slide .company-logo .contact-mail h1{
+    margin-bottom: 20px;
+  }
+  #description .container .wrapper .slide .company-logo .contact-mail .mail-details .privacy-tag{
+    display: none;
+  }
+  #description .container .wrapper .slide .company-logo .contact-mail .mail-details .submit{
+    padding-bottom: 10px;
+    height: 36px;
+    width: 35px;
+  }
+  #description .container .wrapper .slide .links{
+    margin-top: -1%;
+    margin-bottom: 6%;
+  }
+  #description .container .wrapper .slide .links .animated-link ul li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 29px;
+  }
 }
 
 /* ==================== MOBILE LANDSCAPE (669px) ==================== */
@@ -1152,15 +1108,18 @@ body{
 
 /* ==================== MOBILE LANDSCAPE (600px) ==================== */
 @media (max-width: 600px) {
-  #navbar .container .nav .nav-links{
-    width: 30%;
+  #navbar .container .nav{
+    padding: 20px 45px;
   }
+  #navbar .container .nav .nav-links {
+    width: 40%;
+  }
+ 
   #navbar .container .nav ul li a{
-    font-size: 20px;
+    font-size: 18px;
   }
-  #navbar .container .nav .hamburger {
-    display: flex; /* Show on mobile */
-    margin-left: 60%; 
+  #navbar .container .nav .nav-links.active {
+    right: 30px;
   }
 
  /* Hero section */
@@ -1226,17 +1185,17 @@ body{
 
 /* ==================== MOBILE PORTRAIT (480px) ==================== */
 @media (max-width: 480px) {
-    
-    /* Navbar */
-    #navbar .container .nav .nav-links{
-      width: 35%;
+    #navbar .container .nav{
+      padding: 10px 25px;
     }
-    #navbar .container .nav .hamburger {
-      display: flex; /* Show on mobile */
-      margin-left: 45%;
-      margin-top: 20px;
+    #navbar .container .nav .nav-links {
+      width: 45%;
     }
-    
+  
+    #navbar .container .nav ul li a{
+      font-size: 16px;
+    }
+
     /* Hero section */
     #hero-page .container .main-text h1 {
       font-size: 50px;
@@ -1318,13 +1277,6 @@ body{
 
 /* ==================== SMALL MOBILE (360px) ==================== */
 @media (max-width: 360px) {
-    #navbar .container .nav ul li a{
-      font-size: 15px;
-    }
-    #navbar .container .nav .hamburger {
-      display: flex; /* Show on mobile */
-      margin-left: 30%;
-    }
 
     /* Hero section */
     #hero-page .container .main-text h1 {
