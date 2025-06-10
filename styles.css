@@ -82,6 +82,12 @@ body{
 #navbar .container .nav .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(9px, -9px);
 } 
+#navbar .container .nav .nav-links .social-links{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  border-bottom: none;
+}
 
 
 /* css for hero-page */
@@ -805,7 +811,10 @@ body{
     width: 150px;
     height: 50px;
   }
- 
+  #navbar .container .nav .nav-links{
+    width: 20%;
+  }
+
   /* Hero section */
   #hero-page .container .main-text h1 {
     font-size: 80px;
@@ -1205,11 +1214,16 @@ body{
   #hero-page .container .main-text h1 {
     font-size: 50px;
     margin-top: 25%;
+    margin-left: -10px;
+  }
+  #hero-page .container .side-text,
+  #hero-page .container .line {
+    display: none;
   }
   
   /* intro section */
   #intro .container .intro-text{
-    margin: -40% 0 0 35%;
+    margin: 0% 0 0 35%;
   }
   /* Our Work section */
   #our-work .container .animated-text {
@@ -1284,17 +1298,12 @@ body{
   /* Hero section */
   #hero-page .container .main-text h1 {
     font-size: 45px;
-
-  }
-  #hero-page .container .side-text,
-  #hero-page .container .line {
-    display: none;
   }
   /* intro section */
   #intro .container .intro-text .arrow-button{
     width: 80px;
     height: 80px;
-    margin: 80% 0 10% 10%;
+    margin: 30% 0 0% 10%;
   }
   
   /* Our Work section */
@@ -1313,7 +1322,7 @@ body{
     margin-bottom: -10%;
   }
   #description .container .wrapper .slider-text .roll-number {
-    font-size: 60px;
+    font-size: 50px;
   }
   #description .container .wrapper .slider-text .roll-text {
     font-size: 30px;
