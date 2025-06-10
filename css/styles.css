@@ -57,7 +57,7 @@ body{
   position: absolute;
   top: 80px;
   right: 100%;
-  width: 20%;
+  width: 20em;
   height: auto;
   background-color: #fff;
   flex-direction: column;
@@ -89,7 +89,7 @@ body{
 #navbar .container .nav .nav-links .social-links{
   display: flex;
   justify-content: space-between;
-  margin: 10px 75px;
+  margin: 10px 60px;
   border-bottom: none;
 }
 
@@ -1330,7 +1330,13 @@ body{
 
 /* ==================== SMALL MOBILE (360px) ==================== */
 @media (max-width: 360px) {
-  
+  #navbar .container .nav ul li a{
+    font-size: 12px;
+  }
+  #navbar .container .nav .nav-links {
+    width: 60%;
+  }
+
   /* Hero section */
   #hero-page .container .main-text h1 {
     font-size: 45px;
