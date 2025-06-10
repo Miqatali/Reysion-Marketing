@@ -89,7 +89,7 @@ body{
 #navbar .container .nav .nav-links .social-links{
   display: flex;
   justify-content: space-between;
-  margin: 10px 34px;
+  margin: 10px 75px;
   border-bottom: none;
 }
 
