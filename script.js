@@ -88,20 +88,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-window.addEventListener('orientationchange', () => {
-    const screenWidth = window.screen.width;
-    const screenHeight = window.screen.height;
-    const innerWidth = window.innerWidth;
-    const innerHeight = window.innerHeight;
-    const orientation = (innerWidth > innerHeight) ? 'Landscape' : 'Portrait';
+// window.addEventListener('orientationchange', () => {
+//     const screenWidth = window.screen.width;
+//     const screenHeight = window.screen.height;
+//     const innerWidth = window.innerWidth;
+//     const innerHeight = window.innerHeight;
+//     const orientation = (innerWidth > innerHeight) ? 'Landscape' : 'Portrait';
  
-    alert(
-        `Orientation Changed!\n\n` +
-        `Device Orientation: ${orientation}\n` +
-        `Screen Size: ${screenWidth} x ${screenHeight}\n` +
-        `Viewport Size: ${innerWidth} x ${innerHeight}`
-    );
-});
+//     alert(
+//         `Orientation Changed!\n\n` +
+//         `Device Orientation: ${orientation}\n` +
+//         `Screen Size: ${screenWidth} x ${screenHeight}\n` +
+//         `Viewport Size: ${innerWidth} x ${innerHeight}`
+//     );
+// });
 
 function adjustSlideHeight() {
   const slides = document.querySelectorAll('.slide');
