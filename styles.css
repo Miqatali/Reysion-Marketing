@@ -826,7 +826,7 @@ body{
   }
   /* intro section */
   #intro .container .intro-text{
-    margin: -12% 0 0 45%;
+    margin: -10% 0 0 45%;
   }
   /* clients section */
   #clients .logo-container .logo-slide img {
@@ -1234,6 +1234,11 @@ body{
   #intro .container .intro-text{
     margin: 0% 0 0 35%;
   }
+
+  #clients .logo-container .logo-slide img {
+    margin: 30px 40px;
+  }
+
   /* Our Work section */
   #our-work .container .animated-text {
     font-size: 30px;
