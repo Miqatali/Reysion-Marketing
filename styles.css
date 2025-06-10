@@ -897,11 +897,12 @@ body{
     width: 27%;
   }
   #navbar .container .nav .logo img {
-    width: 110px;
-    height: 40px;
+    width: 140px;
+    height: 50px;
   }
   #navbar .container .nav .hamburger{
     width: 30px;
+    margin-top: 20px;
   }
   #navbar .container .nav ul li a{
     font-size: 20px;
@@ -910,7 +911,7 @@ body{
   /* Hero section */
   #hero-page .container .main-text h1 {
       font-size: 70px;
-      margin: 19% -2% 0 7%;
+      margin: 19% 0% 0 5%;
   }  
   #hero-page .container .circle, 
   #hero-page .container .side-text,
@@ -920,7 +921,7 @@ body{
 
   /* intro section */
   #intro .container .intro-text{
-    margin: -20% 0 0 45%;
+    margin: 0 0 0 45%;
   }
   
   /* Our Work section */
@@ -1030,17 +1031,17 @@ body{
   }
   #hero-page .container .main-text h1 {
     font-size: 60px;
-    margin: 19% -11% 0 0;
+    margin: 19% -5% 0 0;
   }
 
   /* Intro section */
   #intro .container .intro-text {
-    margin: -23% 0 0 45%;
+    margin: 0% 0 0 42%;
   }
   /* Our Work section */
   #our-work .container .animated-text {
     font-size: 40px;
-    margin: 0 10% 0 10%;
+    margin: 0 0% 0 0%;
   }
   #our-work .container .marketing {
     grid-template-columns: 1fr;
@@ -1148,7 +1149,7 @@ body{
 
   /* intro section */
   #intro .container .intro-text{
-    margin: -33% 0 0 40%;
+    margin: 0% 0 0 40%;
   }
 
   /* Clients section */
