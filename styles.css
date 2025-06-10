@@ -916,9 +916,9 @@ body{
       display: none;
   }
   #hero-page .container .side-text {
-    writing-mode:sideways-lr;
+    transform: rotateY('90deg');
   }
-  
+
   /* intro section */
   #intro .container .intro-text{
     margin: -20% 0 0 45%;
@@ -992,7 +992,7 @@ body{
 /* ==================== TABLET PORTRAIT (880px) ==================== */
 @media (max-width: 880px){
   #hero-page .container .side-text {
-    writing-mode:sideways-lr;
+    transform: rotateY('90deg');
   }
   #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
     font-size: 11px;
