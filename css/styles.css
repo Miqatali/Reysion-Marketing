@@ -16,24 +16,24 @@ body{
 }
 #navbar .container .nav ul {
   list-style: none;
-  padding: 0;
-  border: 2px solid gray;
+  flex-direction: column;
   border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
 #navbar .container .nav ul li {
-  margin: 0 10px; 
-  border-bottom: 1px solid #949393;
-  padding: 0;
-  line-height: 60px;
+  margin: 10px 25px; 
+  border-bottom: 1px solid #b6b4b4;
+  line-height: 30px;
 }
 
 #navbar .container .nav ul li a {
   text-decoration: none;
   color: black;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #navbar .container .nav .hamburger {
@@ -57,7 +57,7 @@ body{
   position: absolute;
   top: 80px;
   right: 100%;
-  width: 15%;
+  width: 20%;
   height: auto;
   background-color: #fff;
   flex-direction: column;
@@ -82,10 +82,14 @@ body{
 #navbar .container .nav .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(9px, -9px);
 } 
+#navbar .container .nav .nav-links .services-type{
+  display: flex;
+  flex-direction: column;
+}
 #navbar .container .nav .nav-links .social-links{
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
+  margin: 10px 34px;
   border-bottom: none;
 }
 
@@ -291,7 +295,7 @@ body{
   text-align: center;
   margin: 0 15% 0 15%;
   font-size: 50px;
-  font-family: "Bree Serif", serif;;
+  font-family: "Bree Serif", serif;
   word-spacing: 3px;
   letter-spacing: 2px;
   opacity: 0;
@@ -814,6 +818,9 @@ body{
   #navbar .container .nav .nav-links{
     width: 20%;
   }
+   #navbar .container .nav ul li a{
+    font-size: 15px;
+  }
 
   /* Hero section */
   #hero-page .container .main-text h1 {
@@ -894,7 +901,7 @@ body{
 /* ==================== TABLET LANDSCAPE (1024px) ==================== */
 @media (max-width: 1024px) {
   #navbar .container .nav .nav-links{
-    width: 27%;
+    width: 29%;
   }
   #navbar .container .nav .logo img {
     width: 140px;
@@ -905,7 +912,7 @@ body{
     margin-top: 20px;
   }
   #navbar .container .nav ul li a{
-    font-size: 20px;
+    font-size: 15px;
   }
   
   /* Hero section */
@@ -1022,11 +1029,11 @@ body{
 /* ==================== TABLET PORTRAIT (768px) ==================== */
 @media (max-width: 768px) {  
   #navbar .container .nav .nav-links {
-    width: 30%;
+    width: 35%;
   }
  
   #navbar .container .nav ul li a{
-    font-size: 18px;
+    font-size: 13px;
   }
   
   /* Hero section */
@@ -1118,7 +1125,9 @@ body{
 
 /* ==================== MOBILE LANDSCAPE (669px) ==================== */
 @media (max-width: 669px){
-  
+  #navbar .container .nav ul li a{
+    font-size: 13px;
+  }
   #description .container .wrapper .slide .company-logo .contact-mail h1{
     font-size: 17px;
   }
@@ -1136,11 +1145,11 @@ body{
     padding: 20px 45px;
   }
   #navbar .container .nav .nav-links {
-    width: 40%;
+    width: 45%;
   }
  
   #navbar .container .nav ul li a{
-    font-size: 18px;
+    font-size: 13px;
   }
   #navbar .container .nav .nav-links.active {
     right: 30px;
@@ -1217,7 +1226,8 @@ body{
   }
 
   #navbar .container .nav ul li a{
-    font-size: 16px;
+    font-size: 11px;
+    /* margin: 0 10px; */
   }
   /* Hero section */
   #hero-page .container .main-text h1 {
@@ -1307,8 +1317,20 @@ body{
   
 }
 
+/* ==================== SMALL MOBILE (380px) ==================== */
+@media (max-width: 380px) {
+  #navbar .container .nav ul li a{
+    font-size: 11px;
+  }
+  #navbar .container .nav .nav-links {
+    width: 55%;
+  }
+}
+
+
 /* ==================== SMALL MOBILE (360px) ==================== */
 @media (max-width: 360px) {
+  
   /* Hero section */
   #hero-page .container .main-text h1 {
     font-size: 45px;
