@@ -995,6 +995,10 @@ body{
   #hero-page .container .line {
     display: none;
   }
+  /* intro section */
+  #intro .container .intro-text{
+    margin: 0 0 0 44%;
+  }
   #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
     font-size: 11px;
   }
