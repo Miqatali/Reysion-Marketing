@@ -96,7 +96,7 @@ body{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-left: 85%;
+  margin-left: 80%;
   margin-top: 3%;
   display: flex;
   justify-content: center;
@@ -753,7 +753,7 @@ body{
     margin: 0% 10% 0 10%;
   }
   #hero-page .container .circle {
-    margin-left: 82%;
+    margin-left: 80%;
   }
 
   /* clients section */
@@ -822,7 +822,7 @@ body{
   }
   
   #hero-page .container .circle {
-    margin: 0 0 0 80%;
+    margin: 0 0 0 78%;
   }
   /* intro section */
   #intro .container .intro-text{
