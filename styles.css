@@ -915,6 +915,10 @@ body{
   #hero-page .container .circle {
       display: none;
   }
+  #hero-page .container .side-text {
+    writing-mode:sideways-lr;
+  }
+  
   /* intro section */
   #intro .container .intro-text{
     margin: -20% 0 0 45%;
@@ -987,6 +991,9 @@ body{
 
 /* ==================== TABLET PORTRAIT (880px) ==================== */
 @media (max-width: 880px){
+  #hero-page .container .side-text {
+    writing-mode:sideways-lr;
+  }
   #description .container .wrapper .slide .company-logo .contact-mail .mail-details input[type="email"]{
     font-size: 11px;
   }
@@ -1024,9 +1031,6 @@ body{
   #hero-page .container .main-text h1 {
     font-size: 60px;
     margin: 19% -11% 0 0;
-  }
-  #hero-page .container .side-text {
-    writing-mode:sideways-lr;
   }
 
   /* Intro section */
