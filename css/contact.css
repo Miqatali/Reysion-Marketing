@@ -363,6 +363,9 @@ body{
     font-family: "Inter", sans-serif;
     margin-left: 20px;
   }
+  #contact .container .contact-form form .input-area .services-checkboxes label{
+    gap: 5px;
+  }
 }
 
 @media (max-width: 620px){
