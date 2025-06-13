@@ -2,55 +2,40 @@ body{
   background-color: #f1f1f1;
     
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 #navbar .container .nav {
   display: flex;
-  /* margin-top: 20px; */
   justify-content: space-between;
-  padding: 15px 65px;
+  padding: 25px 65px;
 }
-
-
 #navbar .container .nav .logo img{
   width: 140px;
   height: 50px;
 }
 #navbar .container .nav ul {
   list-style: none;
-  padding: 0;
-  border: 2px solid gray;
+  flex-direction: column;
   border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
 #navbar .container .nav ul li {
-  margin: 10px; 
-  border-bottom: 1px solid #949393;
-  padding: 0;
-  line-height: 60px;
+  margin: 10px 25px; 
+  border-bottom: 1px solid #b6b4b4;
+  line-height: 30px;
 }
 
 #navbar .container .nav ul li a {
   text-decoration: none;
   color: black;
-  font-size: 25px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
   cursor: pointer;
-}
-
-#navbar .container .nav .info .line{
-  height: 3px;
-  border: 1px solid black;
-  background-color: black;
-}
-
-#navbar .container .nav .info{
-  display: inline-block;
-  position: relative;
-  margin-top: 5px;
-  font-size: 15px;
-  cursor: pointer;
-}
-#navbar .container .nav .info h2{
-  margin: 5px;
+  font-size: 18px;
+  white-space: nowrap;
 }
 
 #navbar .container .nav .hamburger {
@@ -70,12 +55,11 @@ body{
   background-color: #000;
   transition: all 0.3s ease;
 }
-
 #navbar .container .nav .nav-links {
   position: absolute;
   top: 80px;
   right: 100%;
-  width: 20%;
+  width: 20em;
   height: auto;
   background-color: #fff;
   flex-direction: column;
@@ -85,20 +69,11 @@ body{
   z-index: 100;
 }
 #navbar .container .nav .nav-links.active {
-  right: 20px;
+  right: 50px;
 }
-/* #navbar .container .nav ul{
-  border: 2px solid gray;
-  border-radius: 20px;
-} */
-/* #navbar .container .nav ul li {
-  border-bottom: 1px solid #949393;
-  padding: 0;
-  line-height: 60px;
-} */
 
 #navbar .container .nav .hamburger {
-  display: flex; /* Show on mobile */
+  display: flex; 
 }
 #navbar .container .nav .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
@@ -109,7 +84,22 @@ body{
 #navbar .container .nav .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(9px, -9px);
 } 
+#navbar .container .nav .nav-links .services-type{
+  display: flex;
+  flex-direction: column;
+}
+#navbar .container .nav .nav-links .social-links{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 60px;
+  border-bottom: none;
+} 
 
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #contact .container{
   display: grid;
@@ -118,10 +108,8 @@ body{
   padding: 20px;
   border-radius: 50px;
   border: 4px solid #000;
-  height: 100%;
+  height: auto;
   width:  60vw;
-  margin: 40px auto;
-    
 }
 #contact .container .contact-info{
   display: flex;
@@ -149,12 +137,10 @@ body{
 #contact .container .contact-info .social-media .animated-link ul {
   display: flex;
   position: relative;
-  
 }
 
 #contact .container .contact-info .social-media .animated-link ul li {
   list-style: none;
-  
 }
 
 #contact .container .contact-info .social-media .animated-link ul li a{
@@ -164,7 +150,7 @@ body{
   text-align: center;
   line-height: 42px;
   font-size: 25px;
-  margin: 0 10px;
+  margin: 20px 10px;
   display: block;
   border-radius: 30%;
   position: relative;
@@ -172,6 +158,12 @@ body{
   border: 3px solid #fff;
   z-index: 1;
   border: 2px solid #000;
+}
+
+#contact .container .contact-info .social-media h2{
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  margin-left: 10px;
 }
 
 #contact .container .contact-info .social-media .animated-link ul li a .icon {
@@ -225,6 +217,7 @@ body{
 #contact .container .contact-form .form-details form p{
   font-size: 35px;
   font-family: cursive;
+  margin-bottom: 50px;
 }
 #contact .container .contact-form .form-details form .input-area{
   display: flex;
@@ -239,7 +232,7 @@ body{
   margin-bottom: 20px;
   font-size: 15px;
   color: #fff;
-  
+  margin-bottom: 20px;
 }
 #contact .container .contact-form .form-details form .input-area input::placeholder,
 #contact .container .contact-form .form-details form .input-area textarea::placeholder{
@@ -254,16 +247,132 @@ body{
   color: #fff;
   font-size: 15px;
   padding: 15px;
+  margin-bottom: 20px;
 }
 #contact .container .contact-form form .input-area .services-checkboxes{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   margin-bottom: 20px;
-  font-family: "Roboto Mono", monospace;
+}
+#contact .container .contact-form form .input-area .services-checkboxes label{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin-bottom: 15px;
+   gap: 10px;
+   display: flex;
+   align-items: center;
+}
+#contact .container .contact-form form .input-area .services-checkboxes input[type="checkbox"]{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+#contact .container .contact-form form .input-area h3{
+  margin-bottom: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #contact .container .contact-form form .input-area .send-btn{
   height: 40px;
   font-size: 25px;
   border-radius: 15px;
+}
+
+
+/* ==================== GENERAL STYLES ==================== */
+@media (max-width: 1440px){
+  #contact .container .contact-form .form-details form p{
+    font-size: 38px;
+  }
+  #contact .container .contact-form .form-details .input-area .services-checkboxes{
+    font-size: 15px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1200px){
+  #contact .container .contact-form .form-details form p{
+    font-size: 35px;
+  }
+  #contact .container .contact-form .form-details .input-area .services-checkboxes{
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1024px){
+  #contact .container{
+    width:  75vw;
+    margin: 0 auto;    
+  }
+}
+
+@media (max-width: 880px){
+  #contact .container{
+    width:  80vw;
+  }
+  #contact .container .contact-form .form-details form p{
+    font-size: 28px;
+  }
+  #contact .container .contact-form .form-details .input-area .services-checkboxes{
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  #contact .container .contact-form form .input-area .services-checkboxes label{
+    gap: 5px;
+  }
+}
+
+@media (max-width: 780px){
+  #contact .container{
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+  }
+  #contact .container .contact-form form .input-area .services-checkboxes input[type="checkbox"]{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  #contact .container .contact-info .social-media h2{
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 680px){
+  #contact .container{
+    width:  90vw;
+  }
+  #contact .container{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+  }
+  #contact .container .contact-form form .input-area .services-checkboxes input[type="checkbox"]{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  #contact .container .contact-info .social-media h2{
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 620px){
+  #contact .container{
+    width:  80vw;
+  }
+  #contact .container{
+    display: grid;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-columns: 1fr;
+  }
+  #contact .container .contact-info .social-media{
+    display: none;
+  }
 }
