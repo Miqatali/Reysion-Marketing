@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// js for adjusting slide hight
 function adjustSlideHeight() {
   const slides = document.querySelectorAll('.slide');
   const width = window.innerWidth;

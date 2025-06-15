@@ -816,12 +816,6 @@ body{
     width: 150px;
     height: 50px;
   }
-  #navbar .container .nav .nav-links{
-    width: 20%;
-  }
-   #navbar .container .nav ul li a{
-    font-size: 16px;
-  }
 
   /* Hero section */
   #hero-page .container .main-text h1 {
@@ -901,9 +895,6 @@ body{
 
 /* ==================== TABLET LANDSCAPE (1024px) ==================== */
 @media (max-width: 1024px) {
-  #navbar .container .nav .nav-links{
-    width: 29%;
-  }
   #navbar .container .nav .logo img {
     width: 140px;
     height: 50px;
@@ -911,9 +902,6 @@ body{
   #navbar .container .nav .hamburger{
     width: 30px;
     margin-top: 20px;
-  }
-  #navbar .container .nav ul li a{
-    font-size: 16px;
   }
   
   /* Hero section */
@@ -1028,15 +1016,7 @@ body{
 }
 
 /* ==================== TABLET PORTRAIT (768px) ==================== */
-@media (max-width: 768px) {  
-  #navbar .container .nav .nav-links {
-    width: 35%;
-  }
- 
-  #navbar .container .nav ul li a{
-    font-size: 14px;
-  }
-  
+@media (max-width: 768px) {
   /* Hero section */
   #hero-page .container .circle {
     display: none;
@@ -1126,9 +1106,6 @@ body{
 
 /* ==================== MOBILE LANDSCAPE (669px) ==================== */
 @media (max-width: 669px){
-  #navbar .container .nav ul li a{
-    font-size: 14px;
-  }
   #description .container .wrapper .slide .company-logo .contact-mail h1{
     font-size: 17px;
   }
@@ -1144,16 +1121,6 @@ body{
 @media (max-width: 600px) {
   #navbar .container .nav{
     padding: 20px 45px;
-  }
-  #navbar .container .nav .nav-links {
-    width: 45%;
-  }
- 
-  #navbar .container .nav ul li a{
-    font-size: 14px;
-  }
-  #navbar .container .nav .nav-links.active {
-    right: 30px;
   }
 
   /* Hero section */
@@ -1221,13 +1188,6 @@ body{
 @media (max-width: 480px) {
   #navbar .container .nav{
     padding: 10px 25px;
-  }
-  #navbar .container .nav .nav-links {
-    width: 45%;
-  }
-
-  #navbar .container .nav ul li a{
-    font-size: 12px;
   }
 
   /* Hero section */
@@ -1318,24 +1278,11 @@ body{
   
 }
 
-/* ==================== SMALL MOBILE (380px) ==================== */
-@media (max-width: 380px) {
-  #navbar .container .nav ul li a{
-    font-size: 12px;
-  }
-  #navbar .container .nav .nav-links {
-    width: 55%;
-  }
-}
-
 
 /* ==================== SMALL MOBILE (360px) ==================== */
 @media (max-width: 360px) {
-  #navbar .container .nav ul li a{
-    font-size: 12px;
-  }
-  #navbar .container .nav .nav-links {
-    width: 60%;
+  #navbar .container .nav .nav-links.active {
+    right: 7px;
   }
 
   /* Hero section */
